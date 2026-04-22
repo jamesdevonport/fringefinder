@@ -48,36 +48,25 @@ type MatchFilters = {
   mood_keywords?: string[];
 };
 
-type KimiMessage = { role: "system" | "user" | "assistant"; content: string };
-
 interface Env {
-  AI: {
-    run: (
-      model: string,
-      params: {
-        messages: KimiMessage[];
-        response_format?: { type: "json_object" | "json_schema"; json_schema?: unknown };
-        max_tokens?: number;
-        temperature?: number;
-      },
-    ) => Promise<AIResponse>;
-  };
+  GEMINI_API_KEY: string;
   ASSETS: Fetcher;
 }
 
-type AIResponse = {
-  response?: string | null;
-  result?: string | null;
-  output?: string | null;
-  choices?: Array<{ message?: { content?: string | null } }>;
-  errors?: unknown;
-  [k: string]: unknown;
+type GeminiResponse = {
+  candidates?: Array<{
+    content?: {
+      parts?: Array<{ text?: string }>;
+      role?: string;
+    };
+    finishReason?: string;
+  }>;
+  promptFeedback?: unknown;
+  error?: { code?: number; message?: string; status?: string };
 };
 
-// Kimi K2.5 is a reasoning model that ignored json_object mode in testing
-// and exhausted max_tokens emitting chain-of-thought before any JSON.
-// Llama 3.3 70B is a plain instruct model that honours response_format.
-const MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
+const MODEL = "gemini-3.1-flash-lite";
+const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 const EVENTS: IndexEntry[] = matchIndex as unknown as IndexEntry[];
 const EVENTS_BY_SLUG = new Map(EVENTS.map((e) => [e.slug, e]));
@@ -199,19 +188,12 @@ Rules:
 - mood_keywords: 3–6 short adjectives/nouns that capture the vibe (e.g. "absurd", "confessional", "raucous", "warm", "feminist", "surreal").
 - Put the synthesised search query in one readable sentence, e.g. "A warm, funny hour that won't upset the kids."
 
-Do not explain your reasoning. Do not write "Let me parse this" or any preamble. Do not use markdown fences. Your ENTIRE reply must be a single JSON object starting with { and ending with }.`;
+Output JSON only. No markdown fences, no commentary.`;
 
-  const response = await env.AI.run(MODEL, {
-    messages: [
-      { role: "system", content: system },
-      { role: "user", content: userBrief },
-    ],
-    response_format: { type: "json_object" },
-    max_tokens: 2000,
+  const content = await callGemini(env, system, userBrief, {
+    maxOutputTokens: 1024,
     temperature: 0.3,
   });
-
-  const content = extractContent(response);
   return parseJSON(content) as { query: string; filters: MatchFilters };
 }
 
@@ -273,21 +255,14 @@ Respond with ONLY a single minified JSON object — no prose, no markdown fences
 
 Only use slugs that appear verbatim in the CATALOG below. Do not invent slugs. Rank best to worst.
 
-Do not explain your reasoning. Do not write "Let me think" or any preamble. Do not use markdown fences. Your ENTIRE reply must be a single JSON object starting with { and ending with }.`;
+Output JSON only. No markdown fences, no commentary.`;
 
   const user = `User said:\n${userBrief}\n\nSynthesised query: ${query}\n\nCATALOG:\n${catalog}`;
 
-  const response = await env.AI.run(MODEL, {
-    messages: [
-      { role: "system", content: system },
-      { role: "user", content: user },
-    ],
-    response_format: { type: "json_object" },
-    max_tokens: 3000,
+  const content = await callGemini(env, system, user, {
+    maxOutputTokens: 2048,
     temperature: 0.5,
   });
-
-  const content = extractContent(response);
   const parsed = parseJSON(content) as {
     reply?: string;
     picks: Array<{ slug: string; reason: string }>;
@@ -310,53 +285,60 @@ function buildLine(e: IndexEntry): string {
   return `[${e.slug}] ${e.title} | ${e.genre ?? "Other"} | ${age} | ${dur}${price} | ${desc} | ${next} @ ${venue}${free}`;
 }
 
-function extractContent(response: AIResponse): string {
-  if (response && typeof response.errors !== "undefined" && response.errors) {
-    throw new Error(`model returned errors: ${safeStringify(response.errors)}`);
+async function callGemini(
+  env: Env,
+  system: string,
+  user: string,
+  options: { maxOutputTokens: number; temperature: number },
+): Promise<string> {
+  if (!env.GEMINI_API_KEY) {
+    throw new Error(
+      "GEMINI_API_KEY not set (configure via `wrangler secret put GEMINI_API_KEY` or in the CF dashboard)",
+    );
   }
 
-  const choice = response?.choices?.[0] as
-    | {
-        message?: {
-          content?: unknown;
-          reasoning_content?: unknown;
-          tool_calls?: Array<{ function?: { arguments?: unknown } }>;
-        };
-        delta?: { content?: unknown };
-        text?: unknown;
-      }
-    | undefined;
-
-  const candidates: unknown[] = [
-    response?.response,
-    response?.result,
-    response?.output,
-    choice?.message?.content,
-    choice?.message?.reasoning_content,
-    choice?.message?.tool_calls?.[0]?.function?.arguments,
-    choice?.delta?.content,
-    choice?.text,
-    (response as Record<string, unknown>)?.content,
-    (response as Record<string, unknown>)?.text,
-  ];
-
-  for (const c of candidates) {
-    if (typeof c === "string" && c.trim()) {
-      return stripFences(c.trim());
-    }
-  }
-
-  const keys = Object.keys(response ?? {});
-  const snippet = safeStringify(response).slice(0, 800);
-  console.error("Workers AI returned no extractable content.", {
-    keys,
-    choiceShape: choice ? Object.keys(choice) : null,
-    messageShape: choice?.message ? Object.keys(choice.message) : null,
-    body: snippet,
+  const res = await fetch(GEMINI_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-goog-api-key": env.GEMINI_API_KEY,
+    },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: system }] },
+      contents: [{ role: "user", parts: [{ text: user }] }],
+      generationConfig: {
+        temperature: options.temperature,
+        maxOutputTokens: options.maxOutputTokens,
+        responseMimeType: "application/json",
+      },
+    }),
   });
-  throw new Error(
-    `empty model response (keys=[${keys.join(",")}], body=${snippet})`,
-  );
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`Gemini ${res.status}: ${body.slice(0, 400)}`);
+  }
+
+  const data = (await res.json()) as GeminiResponse;
+
+  if (data.error) {
+    throw new Error(
+      `Gemini API error: ${data.error.message ?? data.error.status ?? JSON.stringify(data.error)}`,
+    );
+  }
+
+  const parts = data.candidates?.[0]?.content?.parts;
+  const text = parts?.map((p) => p?.text ?? "").join("").trim();
+
+  if (!text) {
+    const snippet = safeStringify(data).slice(0, 600);
+    const finishReason = data.candidates?.[0]?.finishReason ?? "unknown";
+    throw new Error(
+      `Gemini empty response (finishReason=${finishReason}, body=${snippet})`,
+    );
+  }
+
+  return stripFences(text);
 }
 
 function stripFences(s: string): string {

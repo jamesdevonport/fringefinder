@@ -39,6 +39,8 @@ yarn-error.log*
 # wrangler / cloudflare
 .wrangler
 .functions-build
+.dev.vars
+.dev.vars.*
 
 # generated data artifacts (rebuilt from ../results.json)
 /data

@@ -9,5 +9,7 @@ binding = "ASSETS"
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
 
-[ai]
-binding = "AI"
+# GEMINI_API_KEY must be provisioned as a Worker secret, NOT a plain var:
+#   wrangler secret put GEMINI_API_KEY
+# (or set it under CF dashboard → Workers → fringefinder → Settings → Variables and Secrets)
+# For local `wrangler dev`, put the key in a .dev.vars file (gitignored).

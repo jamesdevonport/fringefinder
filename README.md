@@ -1,6 +1,6 @@
 # Fringe Finder
 
-An unofficial, fan-made directory of Brighton Fringe 2026. Static Next.js site deployed to Cloudflare Workers with Static Assets, with a Worker handler at `/api/match` that calls Workers AI (Kimi K2.5) for the AI matchmaker.
+An unofficial, fan-made directory of Brighton Fringe 2026. Static Next.js site deployed to Cloudflare Workers with Static Assets, with a Worker handler at `/api/match` that calls Google Gemini (3.1 Flash Lite) for the AI matchmaker.
 
 ## Repo layout
 
@@ -47,9 +47,24 @@ directory = "./out"
 binding = "ASSETS"
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
+```
 
-[ai]
-binding = "AI"
+### Secrets
+
+The Worker calls Gemini via Google's Generative Language API and needs a `GEMINI_API_KEY` secret. Set it **once**, either via wrangler:
+
+```bash
+cd web
+wrangler secret put GEMINI_API_KEY
+# paste your key, hit enter
+```
+
+…or in the CF dashboard → **Workers → fringefinder → Settings → Variables and Secrets → Add secret** with name `GEMINI_API_KEY`.
+
+For local `wrangler dev`, drop the key into `web/.dev.vars` (gitignored):
+
+```
+GEMINI_API_KEY=your-key-here
 ```
 
 ### How the build runs on Cloudflare
@@ -60,7 +75,7 @@ binding = "AI"
 4. `next build` produces a static export in `web/out/`.
 5. `npx wrangler deploy` bundles `web/worker/index.ts` and uploads it alongside the static assets in `web/out/`.
 6. The Worker:
-   - Serves `/api/match` — calls the AI binding (Workers AI / Kimi K2.5) and returns ranked picks.
+   - Serves `/api/match` — calls the Google Gemini API (gemini-3.1-flash-lite) using the `GEMINI_API_KEY` secret and returns ranked picks.
    - Delegates every other request to the `ASSETS` binding, which serves the Next.js static export with clean trailing-slash handling.
 
 ## Local development
