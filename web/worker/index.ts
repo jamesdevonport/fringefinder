@@ -196,7 +196,7 @@ Rules:
 - mood_keywords: 3–6 short adjectives/nouns that capture the vibe (e.g. "absurd", "confessional", "raucous", "warm", "feminist", "surreal").
 - Put the synthesised search query in one readable sentence, e.g. "A warm, funny hour that won't upset the kids."
 
-Reply with ONLY the JSON object. Nothing else.`;
+Do not explain your reasoning. Do not write "Let me parse this" or any preamble. Do not use markdown fences. Your ENTIRE reply must be a single JSON object starting with { and ending with }.`;
 
   const response = await env.AI.run(MODEL, {
     messages: [
@@ -204,8 +204,8 @@ Reply with ONLY the JSON object. Nothing else.`;
       { role: "user", content: userBrief },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 500,
-    temperature: 0.4,
+    max_tokens: 2000,
+    temperature: 0.3,
   });
 
   const content = extractContent(response);
@@ -270,7 +270,7 @@ Respond with ONLY a single minified JSON object — no prose, no markdown fences
 
 Only use slugs that appear verbatim in the CATALOG below. Do not invent slugs. Rank best to worst.
 
-Reply with ONLY the JSON object. Nothing else.`;
+Do not explain your reasoning. Do not write "Let me think" or any preamble. Do not use markdown fences. Your ENTIRE reply must be a single JSON object starting with { and ending with }.`;
 
   const user = `User said:\n${userBrief}\n\nSynthesised query: ${query}\n\nCATALOG:\n${catalog}`;
 
@@ -280,8 +280,8 @@ Reply with ONLY the JSON object. Nothing else.`;
       { role: "user", content: user },
     ],
     response_format: { type: "json_object" },
-    max_tokens: 1800,
-    temperature: 0.55,
+    max_tokens: 3000,
+    temperature: 0.5,
   });
 
   const content = extractContent(response);
@@ -367,18 +367,51 @@ function parseJSON(raw: string): unknown {
   try {
     return JSON.parse(raw);
   } catch {
-    // Some models prepend thinking or a preamble before the JSON. Grab the
-    // first {...} or [...] block.
-    const match = raw.match(/[\{\[][\s\S]*[\}\]]/);
-    if (match) {
+    // Reasoning models prepend chain-of-thought before the JSON. Walk the
+    // string and return the first balanced JSON object/array.
+    const extracted = extractBalancedJSON(raw);
+    if (extracted) {
       try {
-        return JSON.parse(match[0]);
+        return JSON.parse(extracted);
       } catch {
         /* fall through */
       }
     }
-    throw new Error(`JSON parse failed: ${raw.slice(0, 160)}`);
+    throw new Error(`JSON parse failed: ${raw.slice(0, 400)}`);
   }
+}
+
+function extractBalancedJSON(s: string): string | null {
+  for (let i = 0; i < s.length; i++) {
+    const start = s[i];
+    if (start !== "{" && start !== "[") continue;
+    const closer = start === "{" ? "}" : "]";
+    let depth = 0;
+    let inStr = false;
+    let escape = false;
+    for (let j = i; j < s.length; j++) {
+      const c = s[j];
+      if (escape) {
+        escape = false;
+        continue;
+      }
+      if (c === "\\") {
+        escape = true;
+        continue;
+      }
+      if (c === '"') {
+        inStr = !inStr;
+        continue;
+      }
+      if (inStr) continue;
+      if (c === start) depth++;
+      else if (c === closer) {
+        depth--;
+        if (depth === 0) return s.substring(i, j + 1);
+      }
+    }
+  }
+  return null;
 }
 
 function safeStringify(v: unknown): string {

@@ -18,10 +18,37 @@ const inter = Inter({
   display: "swap",
 });
 
+const SITE_TITLE = "Fringe Finder — an unofficial guide to Brighton Fringe 2026";
+const SITE_DESCRIPTION =
+  "A fan-made, interactive directory of Brighton Fringe 2026 events. Wander the bubble-graph, search by venue or date, or let the AI match you to shows.";
+// Override by setting NEXT_PUBLIC_SITE_URL in the build env once the
+// production domain is known. Used for absolute OG/Twitter image URLs.
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fringefinder.pages.dev";
+
 export const metadata: Metadata = {
-  title: "Fringe Finder — an unofficial guide to Brighton Fringe 2026",
-  description:
-    "A fan-made, interactive directory of Brighton Fringe 2026 events. Wander the bubble-graph, search by venue or date, or let the AI match you to shows.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    type: "website",
+    siteName: "Fringe Finder",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Fringe Finder — unofficial Brighton Fringe 2026 directory",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
