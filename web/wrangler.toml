@@ -1,4 +1,4 @@
-name = "fringe-finder"
+name = "fringefinder"
 account_id = "1cec23b3da967c4a89800769b5cfa94a"  # James.wood@pagehub.co.uk
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
