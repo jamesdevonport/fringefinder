@@ -9,7 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "npm run build && wrangler pages deploy out --project-name fringe-finder"
+    "deploy": "npm run build && wrangler pages deploy out --project-name fringefinder"
   },
   "dependencies": {
     "d3-force": "^3.0.0",
