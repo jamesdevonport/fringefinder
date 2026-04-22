@@ -65,7 +65,7 @@ type GeminiResponse = {
   error?: { code?: number; message?: string; status?: string };
 };
 
-const MODEL = "gemini-3.1-flash-lite";
+const MODEL = "gemini-3.1-flash-lite-preview";
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 const EVENTS: IndexEntry[] = matchIndex as unknown as IndexEntry[];

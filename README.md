@@ -75,7 +75,7 @@ GEMINI_API_KEY=your-key-here
 4. `next build` produces a static export in `web/out/`.
 5. `npx wrangler deploy` bundles `web/worker/index.ts` and uploads it alongside the static assets in `web/out/`.
 6. The Worker:
-   - Serves `/api/match` — calls the Google Gemini API (gemini-3.1-flash-lite) using the `GEMINI_API_KEY` secret and returns ranked picks.
+   - Serves `/api/match` — calls the Google Gemini API (gemini-3.1-flash-lite-preview) using the `GEMINI_API_KEY` secret and returns ranked picks.
    - Delegates every other request to the `ASSETS` binding, which serves the Next.js static export with clean trailing-slash handling.
 
 ## Local development
