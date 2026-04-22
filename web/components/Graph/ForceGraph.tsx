@@ -142,14 +142,22 @@ export function ForceGraph({
 
     g.d3ReheatSimulation();
 
-    const t = setTimeout(() => {
-      try {
-        g.zoomToFit(500, 80);
-      } catch {
-        /* ignore */
-      }
-    }, 450);
-    return () => clearTimeout(t);
+    // The force simulation spreads nodes out over several seconds. A single
+    // early zoomToFit() camps the camera on the initial tight cluster, so the
+    // user lands on what looks like an empty map. Fit multiple times as the
+    // layout expands — plus one final snap on engine-stop (see onEngineStop
+    // below) so the view always ends framed to every node.
+    const fitAt = [250, 800, 1600, 2800];
+    const timers = fitAt.map((ms) =>
+      setTimeout(() => {
+        try {
+          g.zoomToFit(400, 60);
+        } catch {
+          /* ignore */
+        }
+      }, ms),
+    );
+    return () => timers.forEach(clearTimeout);
   }, [data]);
 
   // Stable refresh callback pointed at the graph (used by async image loads)
@@ -214,6 +222,13 @@ export function ForceGraph({
           backgroundColor="rgba(0,0,0,0)"
           cooldownTime={layout === "radial" ? 1500 : 5500}
           warmupTicks={30}
+          onEngineStop={() => {
+            try {
+              graphRef.current?.zoomToFit(400, 60);
+            } catch {
+              /* ignore */
+            }
+          }}
           onNodeClick={handleClick}
           onNodeHover={(n: GraphNode | null) => setHover(n)}
           d3AlphaDecay={0.04}
