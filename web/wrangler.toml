@@ -1,8 +1,13 @@
 name = "fringefinder"
-account_id = "1cec23b3da967c4a89800769b5cfa94a"  # James.wood@pagehub.co.uk
+main = "worker/index.ts"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./out"
+
+[assets]
+directory = "./out"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
 
 [ai]
 binding = "AI"

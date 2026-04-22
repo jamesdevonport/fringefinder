@@ -1,6 +1,6 @@
 # Fringe Finder
 
-An unofficial, fan-made directory of Brighton Fringe 2026. Static Next.js site with a Cloudflare Pages Function for the AI matchmaker (Workers AI / Kimi K2.5).
+An unofficial, fan-made directory of Brighton Fringe 2026. Static Next.js site deployed to Cloudflare Workers with Static Assets, with a Worker handler at `/api/match` that calls Workers AI (Kimi K2.5) for the AI matchmaker.
 
 ## Repo layout
 
@@ -8,48 +8,60 @@ An unofficial, fan-made directory of Brighton Fringe 2026. Static Next.js site w
 fringe/
 ├── scrape.py           # Python scraper (brightonfringe.org → results.json)
 ├── results.json        # Scraped catalogue — input to the web build
-├── web/                # Next.js 16 site deployed to Cloudflare Pages
+├── web/                # Next.js 16 site deployed as a Cloudflare Worker + Static Assets
 │   ├── app/            # Routes: /, /browse, /calendar, /match, /explore, /events/[slug], /venues/[slug], /bookmarks
 │   ├── components/
-│   ├── functions/api/  # Cloudflare Pages Functions (AI matchmaker)
+│   ├── worker/
+│   │   └── index.ts    # Cloudflare Worker entry — handles /api/match, delegates everything else to static assets
 │   ├── lib/
 │   ├── scripts/
 │   │   └── prepare-data.ts   # Reads ../results.json → writes web/data/*.json + web/public/events-search.json
-│   └── wrangler.toml   # AI binding + build output config
+│   └── wrangler.toml   # Worker + assets + AI binding
 └── .gitignore
 ```
 
 The generated files under `web/data/` and `web/public/events-search.json` are intentionally **not** committed — they are rebuilt from `results.json` on every build via the `prebuild` npm hook.
 
-## Cloudflare Pages deployment
+## Cloudflare Workers deployment
 
-Connect this GitHub repo to a Cloudflare Pages project with the following settings:
+Connect this GitHub repo to a Cloudflare Workers project with the following build settings:
 
 | Setting                    | Value                |
 | -------------------------- | -------------------- |
 | Production branch          | `main`               |
-| Framework preset           | Next.js (Static HTML Export) — or "None" |
 | Build command              | `npm run build`      |
-| Build output directory     | `out`                |
+| Deploy command             | `npx wrangler deploy` |
 | Root directory (advanced)  | `web`                |
 | Node version (env var)     | `NODE_VERSION=20` (optional, CF default 22 also works) |
 
-The Workers AI binding for `/api/match` is declared in `web/wrangler.toml`:
+Everything else is driven by `web/wrangler.toml`:
 
 ```toml
+name = "fringefinder"
+main = "worker/index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./out"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+
 [ai]
 binding = "AI"
 ```
 
-Cloudflare Pages respects `wrangler.toml` at the Pages project root (here, `web/`), so the AI binding is provisioned automatically — no dashboard binding needed. If you prefer the dashboard, remove the `[ai]` block and add the binding under **Pages project → Settings → Functions → Bindings → AI**.
-
-### How the build runs on Cloudflare Pages
+### How the build runs on Cloudflare
 
 1. CF clones the repo.
 2. `cd web && npm ci && npm run build`.
 3. `prebuild` hook runs `tsx scripts/prepare-data.ts`, which reads `../results.json` and writes `web/data/*.json` + `web/public/events-search.json`.
 4. `next build` produces a static export in `web/out/`.
-5. Cloudflare Pages serves `web/out/` and wires `web/functions/api/match.ts` as a Pages Function at `/api/match` with the AI binding.
+5. `npx wrangler deploy` bundles `web/worker/index.ts` and uploads it alongside the static assets in `web/out/`.
+6. The Worker:
+   - Serves `/api/match` — calls the AI binding (Workers AI / Kimi K2.5) and returns ranked picks.
+   - Delegates every other request to the `ASSETS` binding, which serves the Next.js static export with clean trailing-slash handling.
 
 ## Local development
 

@@ -1,5 +1,5 @@
 /// <reference types="@cloudflare/workers-types/2023-07-01" />
-import matchIndex from "../../data/match-index.json";
+import matchIndex from "../data/match-index.json";
 
 type Performance = {
   date_iso: string;
@@ -62,6 +62,7 @@ interface Env {
       },
     ) => Promise<{ response?: string; choices?: Array<{ message: { content: string } }> }>;
   };
+  ASSETS: Fetcher;
 }
 
 const MODEL = "@cf/moonshotai/kimi-k2.5";
@@ -69,10 +70,25 @@ const MODEL = "@cf/moonshotai/kimi-k2.5";
 const EVENTS: IndexEntry[] = matchIndex as unknown as IndexEntry[];
 const EVENTS_BY_SLUG = new Map(EVENTS.map((e) => [e.slug, e]));
 
-export const onRequestPost: PagesFunction<Env> = async (ctx) => {
+export default {
+  async fetch(request: Request, env: Env): Promise<Response> {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/api/match") {
+      if (request.method !== "POST") {
+        return json({ error: "Method not allowed" }, 405);
+      }
+      return handleMatch(request, env);
+    }
+
+    return env.ASSETS.fetch(request);
+  },
+};
+
+async function handleMatch(request: Request, env: Env): Promise<Response> {
   let body: { messages?: ChatTurn[] };
   try {
-    body = (await ctx.request.json()) as { messages?: ChatTurn[] };
+    body = (await request.json()) as { messages?: ChatTurn[] };
   } catch {
     return json({ error: "Invalid JSON" }, 400);
   }
@@ -83,7 +99,9 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
           !!m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string",
       )
     : [];
-  const userTurns = history.filter((m) => m.role === "user" && m.content.trim().length > 0);
+  const userTurns = history.filter(
+    (m) => m.role === "user" && m.content.trim().length > 0,
+  );
 
   if (userTurns.length === 0) {
     return json({ error: "No user message to match against." }, 400);
@@ -99,7 +117,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   let filters: MatchFilters;
   let synthQuery: string;
   try {
-    const result = await synthesiseFilters(ctx.env, userBrief);
+    const result = await synthesiseFilters(env, userBrief);
     filters = result.filters;
     synthQuery = result.query;
   } catch (e) {
@@ -110,7 +128,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
 
   let ranked: { reply: string; picks: Array<{ slug: string; reason: string }> };
   try {
-    ranked = await rerank(ctx.env, userBrief, synthQuery, candidates);
+    ranked = await rerank(env, userBrief, synthQuery, candidates);
   } catch (e) {
     return json({ error: `rerank failed: ${describe(e)}` }, 500);
   }
@@ -130,7 +148,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
     picks,
     usedModel: MODEL,
   });
-};
+}
 
 const FILTER_SCHEMA = {
   name: "fringe_filters",
