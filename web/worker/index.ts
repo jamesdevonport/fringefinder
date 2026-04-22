@@ -74,7 +74,10 @@ type AIResponse = {
   [k: string]: unknown;
 };
 
-const MODEL = "@cf/moonshotai/kimi-k2.5";
+// Kimi K2.5 is a reasoning model that ignored json_object mode in testing
+// and exhausted max_tokens emitting chain-of-thought before any JSON.
+// Llama 3.3 70B is a plain instruct model that honours response_format.
+const MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
 const EVENTS: IndexEntry[] = matchIndex as unknown as IndexEntry[];
 const EVENTS_BY_SLUG = new Map(EVENTS.map((e) => [e.slug, e]));

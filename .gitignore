@@ -12,6 +12,9 @@ sample.html
 # OS noise
 .DS_Store
 Thumbs.db
+CleanShot *.png
+CleanShot *.jpg
+CleanShot *.mp4
 
 # Editor state
 .idea/
