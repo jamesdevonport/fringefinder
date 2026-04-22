@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brighton Fringe brand palette */
+  --color-purple: #7F3F98;
+  --color-purple-deep: #330968;
+  --color-purple-hot: #AB1DFE;
+  --color-lilac: #DAD0EC;
+  --color-lilac-soft: #EEE8F7;
+
+  /* Supporting accents */
+  --color-coral: #FF5B4A;
+  --color-coral-ink: #7A1F15;
+  --color-teal: #2C7A7B;
+  --color-teal-ink: #134242;
+  --color-butter: #FFE2A0;
+
+  /* Neutrals — soft lilac-white canvas to stay on-brand with purple */
+  --color-cream: #F7F3FB;
+  --color-paper: #EDE6F5;
+  --color-paper-deep: #D9CFEA;
+  --color-ink: #1A1714;
+  --color-ink-soft: #4A3F36;
+
+  /* Type */
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  color-scheme: light;
+  --stroke: 2px;
+}
+
+html, body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv02", "cv11";
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(127, 63, 152, 0.09) 0, transparent 42%),
+    radial-gradient(circle at 88% 72%, rgba(171, 29, 254, 0.08) 0, transparent 45%),
+    radial-gradient(circle at 48% 96%, rgba(255, 91, 74, 0.05) 0, transparent 40%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-weight: 800; letter-spacing: -0.035em; }
+
+.font-display { font-family: var(--font-display); }
+
+/* -------------------------------------------------------------------------- */
+/* Stickers (chips with rotated, hand-cut feel)                               */
+/* -------------------------------------------------------------------------- */
+.sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border: var(--stroke) solid var(--color-ink);
+  border-radius: 999px;
+  background: var(--color-lilac-soft);
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 500;
+  box-shadow: 2px 2px 0 var(--color-ink);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.sticker:hover {
+  transform: translate(-1px, -1px) rotate(-1deg);
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.sticker--purple { background: var(--color-purple); color: white; }
+.sticker--coral  { background: var(--color-coral);  color: white; }
+.sticker--teal   { background: var(--color-teal);   color: white; }
+.sticker--ink    { background: var(--color-ink);    color: var(--color-cream); }
+
+/* -------------------------------------------------------------------------- */
+/* Cards                                                                      */
+/* -------------------------------------------------------------------------- */
+.card {
+  background: white;
+  border: var(--stroke) solid var(--color-ink);
+  border-radius: 22px;
+  box-shadow: 4px 4px 0 var(--color-ink);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card--link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+
+.card--purple { background: var(--color-purple);      color: white; border-color: var(--color-ink); }
+.card--coral  { background: var(--color-coral);       color: white; border-color: var(--color-ink); }
+.card--teal   { background: var(--color-teal);        color: white; border-color: var(--color-ink); }
+.card--ink    { background: var(--color-ink);         color: var(--color-cream); border-color: var(--color-ink); }
+.card--lilac  { background: var(--color-lilac-soft);  color: var(--color-ink); }
+.card--deep   { background: var(--color-purple-deep); color: var(--color-butter); border-color: var(--color-ink); }
+
+/* -------------------------------------------------------------------------- */
+/* Buttons                                                                    */
+/* -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  border: var(--stroke) solid var(--color-ink);
+  border-radius: 999px;
+  font-weight: 600;
+  background: white;
+  color: var(--color-ink);
+  box-shadow: 3px 3px 0 var(--color-ink);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.btn:hover  { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--color-ink); }
+.btn:active { transform: translate(1px, 1px);   box-shadow: 1px 1px 0 var(--color-ink); }
+
+.btn--purple { background: var(--color-purple);      color: white; }
+.btn--coral  { background: var(--color-coral);       color: white; }
+.btn--teal   { background: var(--color-teal);        color: white; }
+.btn--ink    { background: var(--color-ink);         color: var(--color-cream); }
+.btn--deep   { background: var(--color-purple-deep); color: var(--color-butter); }
+
+/* -------------------------------------------------------------------------- */
+/* Underline link treatment                                                   */
+/* -------------------------------------------------------------------------- */
+.wobble-underline {
+  background-image: linear-gradient(var(--color-purple), var(--color-purple));
+  background-size: 100% 4px;
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+}
+
+.wobble-underline--coral {
+  background-image: linear-gradient(var(--color-coral), var(--color-coral));
+  background-size: 100% 4px;
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Animations                                                                 */
+/* -------------------------------------------------------------------------- */
+@keyframes wobble {
+  0%, 100% { transform: translateY(0)    rotate(0); }
+  50%      { transform: translateY(-4px) rotate(2deg); }
+}
+.wobble { animation: wobble 1.8s ease-in-out infinite; }
+
+@keyframes fringe-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes fringe-float {
+  0%, 100% { transform: translate(0, 0) rotate(var(--rot, 0deg)); }
+  50%      { transform: translate(0, -6px) rotate(calc(var(--rot, 0deg) + 1.5deg)); }
+}
+.float-gentle { animation: fringe-float 5s ease-in-out infinite; }
+
+@keyframes fringe-blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.4; transform: scale(0.85); }
+}
+.star-blink { animation: fringe-blink 3s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wobble, .float-gentle, .star-blink { animation: none; }
+  [style*="fringe-marquee"] { animation-play-state: paused !important; }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Chip (compact filter)                                                      */
+/* -------------------------------------------------------------------------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  border: var(--stroke) solid var(--color-ink);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: var(--color-lilac-soft);
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease, color 120ms ease;
+  user-select: none;
+}
+
+.chip:hover { transform: translateY(-1px); background: var(--color-lilac); }
+.chip[data-active="true"]                  { background: var(--color-purple);      color: white; }
+.chip[data-tone="warn"][data-active="true"] { background: var(--color-coral);       color: white; }
+
+/* -------------------------------------------------------------------------- */
+/* Inputs                                                                     */
+/* -------------------------------------------------------------------------- */
+.input {
+  padding: 0.6rem 0.9rem;
+  border: var(--stroke) solid var(--color-ink);
+  border-radius: 14px;
+  background: white;
+  font-size: 0.95rem;
+  outline: none;
+  width: 100%;
+}
+
+.input:focus { box-shadow: 3px 3px 0 var(--color-purple); }
+
+.ink-soft { color: var(--color-ink-soft); }
+
+/* -------------------------------------------------------------------------- */
+/* Utility                                                                    */
+/* -------------------------------------------------------------------------- */
+.scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-purple);
+  border-radius: 999px;
+}
+
+/* Purple paint-splash bottom edge — used by the SiteHeader brush SVG */
+.paint-splash-edge {
+  filter: drop-shadow(0 2px 0 rgba(26, 23, 20, 0.25));
+}

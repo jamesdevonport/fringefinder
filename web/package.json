@@ -1,0 +1,37 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare-data": "tsx scripts/prepare-data.ts",
+    "predev": "tsx scripts/prepare-data.ts",
+    "prebuild": "tsx scripts/prepare-data.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "npm run build && wrangler pages deploy out --project-name fringe-finder"
+  },
+  "dependencies": {
+    "d3-force": "^3.0.0",
+    "minisearch": "^7.2.0",
+    "motion": "^12.38.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-force-graph-2d": "^1.29.1",
+    "react-window": "^2.2.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260421.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/d3-force": "^3.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-window": "^1.8.8",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "wrangler": "^4.84.1"
+  }
+}
