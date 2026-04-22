@@ -21,9 +21,9 @@ const inter = Inter({
 const SITE_TITLE = "Fringe Finder — an unofficial guide to Brighton Fringe 2026";
 const SITE_DESCRIPTION =
   "A fan-made, interactive directory of Brighton Fringe 2026 events. Wander the bubble-graph, search by venue or date, or let the AI match you to shows.";
-// Override by setting NEXT_PUBLIC_SITE_URL in the build env once the
-// production domain is known. Used for absolute OG/Twitter image URLs.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fringefinder.pages.dev";
+// Used for absolute OG/Twitter image URLs baked into the static HTML.
+// Override via NEXT_PUBLIC_SITE_URL in the build env if the domain changes.
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://fringefinder.co.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
