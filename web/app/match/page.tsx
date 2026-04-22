@@ -426,11 +426,16 @@ const Composer = forwardRef<HTMLTextAreaElement, ComposerProps>(function Compose
   }
 
   const canSend = !disabled && !!value.trim();
+  const footerVisible = useFooterVisible();
 
   return (
     <div
-      className="fixed bottom-0 inset-x-0 z-20 pointer-events-none"
-      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+      className="fixed bottom-0 inset-x-0 z-20 pointer-events-none transition-transform duration-200 ease-out"
+      style={{
+        paddingBottom: "env(safe-area-inset-bottom)",
+        transform: footerVisible ? "translateY(100%)" : "translateY(0)",
+      }}
+      aria-hidden={footerVisible ? "true" : undefined}
     >
       {/* Fade above the composer so content scrolling behind it doesn't hard-cut */}
       <div
@@ -508,4 +513,22 @@ function genId(): string {
     return crypto.randomUUID();
   }
   return Math.random().toString(36).slice(2);
+}
+
+// Slide the composer away when the site footer scrolls into view so it
+// doesn't hover over the footer text.
+function useFooterVisible(): boolean {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    const footer = document.querySelector("footer");
+    if (!footer || typeof IntersectionObserver === "undefined") return;
+    const obs = new IntersectionObserver(
+      (entries) => setVisible(entries[0]?.isIntersecting ?? false),
+      { threshold: 0 },
+    );
+    obs.observe(footer);
+    return () => obs.disconnect();
+  }, []);
+  return visible;
 }
