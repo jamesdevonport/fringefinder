@@ -4,8 +4,21 @@ import type { EventSearch } from "@/lib/types";
 import { formatDate, formatPriceRange } from "@/lib/search";
 import { BookmarkButton } from "./BookmarkButton";
 
-export function EventCard({ event }: { event: EventSearch }) {
-  const nextDate = event.earliest_date ? formatDate(event.earliest_date) : null;
+type EventCardDateSummary = {
+  iso: string;
+  extraCount?: number;
+};
+
+export function EventCard({
+  event,
+  dateSummary,
+}: {
+  event: EventSearch;
+  dateSummary?: EventCardDateSummary | null;
+}) {
+  const nextDate = dateSummary?.iso ?? event.earliest_date;
+  const nextDateText = nextDate ? formatDate(nextDate) : null;
+  const extraDates = dateSummary?.extraCount ?? 0;
   const venue = event.venue_list[0];
   const price = formatPriceRange(event.price_min, event.price_max, event.has_free_performance);
   return (
@@ -40,7 +53,12 @@ export function EventCard({ event }: { event: EventSearch }) {
           <p className="text-sm ink-soft line-clamp-1">{event.company}</p>
         )}
         <div className="mt-auto pt-2 flex flex-wrap gap-2 items-center text-xs ink-soft">
-          {nextDate && <span>▷ {nextDate}</span>}
+          {nextDateText && (
+            <span>
+              ▷ {nextDateText}
+              {extraDates > 0 ? ` +${extraDates} more` : ""}
+            </span>
+          )}
           {venue && <span>@ {venue}</span>}
         </div>
         <div className="flex items-center gap-2 pt-1 text-xs">

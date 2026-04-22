@@ -8,8 +8,10 @@ import {
   buildMiniSearch,
   decodeFilters,
   encodeFilters,
+  getDisplayDateSummary,
   type FilterState,
   matchesFilters,
+  resolveDateRange,
   sortEvents,
   type SortKey,
 } from "@/lib/search";
@@ -26,6 +28,7 @@ export function BrowseClient({ facets }: { facets: Facets }) {
   const [visible, setVisible] = useState(PAGE_SIZE);
 
   const filter = useMemo(() => decodeFilters(params ?? new URLSearchParams()), [params]);
+  const dateRange = useMemo(() => resolveDateRange(filter), [filter]);
 
   useEffect(() => {
     let cancelled = false;
@@ -53,8 +56,8 @@ export function BrowseClient({ facets }: { facets: Facets }) {
       pool = pool.filter((e) => slugs.has(e.slug));
     }
     pool = pool.filter((e) => matchesFilters(e, filter));
-    return sortEvents(pool, sort);
-  }, [events, filter, mini, sort]);
+    return sortEvents(pool, sort, dateRange);
+  }, [dateRange, events, filter, mini, sort]);
 
   useEffect(() => {
     setVisible(PAGE_SIZE);
@@ -110,7 +113,11 @@ export function BrowseClient({ facets }: { facets: Facets }) {
           <>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {results.slice(0, visible).map((e) => (
-                <EventCard key={e.slug} event={e} />
+                <EventCard
+                  key={e.slug}
+                  event={e}
+                  dateSummary={dateRange ? getDisplayDateSummary(e, dateRange) : null}
+                />
               ))}
             </div>
             {visible < results.length && (

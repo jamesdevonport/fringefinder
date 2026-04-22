@@ -88,9 +88,30 @@ export function resolveDateRange(f: FilterState): [string, string] | null {
   return null;
 }
 
-function datesIntersect(eventDates: string[], range: [string, string]): boolean {
+export function datesWithinRange(
+  eventDates: string[],
+  range: [string, string] | null,
+): string[] {
+  if (!range) return eventDates;
   const [from, to] = range;
-  return eventDates.some((d) => d >= from && d <= to);
+  return eventDates.filter((d) => d >= from && d <= to);
+}
+
+function datesIntersect(eventDates: string[], range: [string, string]): boolean {
+  return datesWithinRange(eventDates, range).length > 0;
+}
+
+export function getDisplayDateSummary(
+  e: Pick<EventSearch, "date_list" | "earliest_date">,
+  range: [string, string] | null,
+): { iso: string; extraCount: number } | null {
+  const matchingDates = datesWithinRange(e.date_list, range);
+  const iso = matchingDates[0] ?? e.earliest_date;
+  if (!iso) return null;
+  return {
+    iso,
+    extraCount: Math.max(0, matchingDates.length - 1),
+  };
 }
 
 export function matchesFilters(e: EventSearch, f: FilterState): boolean {
@@ -136,7 +157,11 @@ export function buildMiniSearch(events: EventSearch[]): MiniSearch<EventSearch> 
 
 export type SortKey = "next" | "title" | "price" | "performances";
 
-export function sortEvents(events: EventSearch[], sort: SortKey): EventSearch[] {
+export function sortEvents(
+  events: EventSearch[],
+  sort: SortKey,
+  range: [string, string] | null = null,
+): EventSearch[] {
   const arr = [...events];
   if (sort === "title") arr.sort((a, b) => a.title.localeCompare(b.title));
   else if (sort === "price") {
@@ -144,7 +169,11 @@ export function sortEvents(events: EventSearch[], sort: SortKey): EventSearch[] 
   } else if (sort === "performances") {
     arr.sort((a, b) => b.date_list.length - a.date_list.length);
   } else {
-    arr.sort((a, b) => (a.earliest_date ?? "9999").localeCompare(b.earliest_date ?? "9999"));
+    arr.sort((a, b) => {
+      const aDate = getDisplayDateSummary(a, range)?.iso ?? "9999";
+      const bDate = getDisplayDateSummary(b, range)?.iso ?? "9999";
+      return aDate.localeCompare(bDate) || a.title.localeCompare(b.title);
+    });
   }
   return arr;
 }
