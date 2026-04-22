@@ -76,29 +76,34 @@ function SiteHeader() {
       className="relative"
       style={{ background: "#FFFFFF" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center gap-6">
-        <Link href="/" className="flex items-center gap-3 group">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center gap-2 sm:gap-6">
+        <Link href="/" className="flex items-center gap-3 group shrink-0">
           <Image
             src="/fringe-finder-logo.png"
             alt="Fringe Finder"
             width={360}
             height={240}
             priority
-            className="h-16 sm:h-20 lg:h-24 w-auto"
-            sizes="(min-width: 1024px) 300px, (min-width: 640px) 240px, 180px"
+            className="h-12 sm:h-20 lg:h-24 w-auto"
+            sizes="(min-width: 1024px) 300px, (min-width: 640px) 240px, 140px"
           />
           <span className="sr-only">Fringe Finder</span>
           <span className="text-[10px] sm:text-xs uppercase tracking-[0.22em] text-ink-soft font-bold mt-4 hidden sm:inline-block">
             Unofficial
           </span>
         </Link>
-        <nav className="ml-auto flex items-center gap-1 text-sm">
+        <nav className="ml-auto flex items-center gap-0.5 sm:gap-1 text-sm">
           <NavLink href="/browse">Browse</NavLink>
-          <NavLink href="/calendar">Calendar</NavLink>
-          <NavLink href="/explore">Wander</NavLink>
+          <NavLink href="/calendar" hideOnXs>
+            Calendar
+          </NavLink>
+          <NavLink href="/explore" hideOnXs>
+            Wander
+          </NavLink>
           <BookmarksNavLink />
           <NavLink href="/match" primary>
-            Match me
+            <span className="sm:hidden">Match</span>
+            <span className="hidden sm:inline">Match me</span>
           </NavLink>
         </nav>
       </div>
@@ -143,16 +148,19 @@ function NavLink({
   href,
   children,
   primary,
+  hideOnXs,
 }: {
   href: string;
   children: React.ReactNode;
   primary?: boolean;
+  hideOnXs?: boolean;
 }) {
+  const hidden = hideOnXs ? "hidden sm:inline-flex" : "inline-flex";
   if (primary) {
     return (
       <Link
         href={href}
-        className="px-3 py-1.5 rounded-full font-medium border-2 border-ink transition-colors"
+        className={`${hidden} items-center px-2.5 sm:px-3 py-1.5 rounded-full font-medium border-2 border-ink transition-colors whitespace-nowrap`}
         style={{ background: "var(--color-purple)", color: "white" }}
       >
         {children}
@@ -162,7 +170,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="px-3 py-1.5 rounded-full hover:bg-ink hover:text-cream transition-colors font-medium"
+      className={`${hidden} items-center px-2 sm:px-3 py-1.5 rounded-full hover:bg-ink hover:text-cream transition-colors font-medium whitespace-nowrap`}
     >
       {children}
     </Link>

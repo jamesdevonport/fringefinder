@@ -127,26 +127,31 @@ export default function MatchPage() {
   const hasUserTurn = messages.some((m) => m.role === "user");
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-10 pb-32">
-      <header className="mb-8 text-center">
+    <div
+      className="max-w-4xl mx-auto px-3 sm:px-6 pt-6 sm:pt-10"
+      style={{
+        paddingBottom: "calc(10rem + env(safe-area-inset-bottom))",
+      }}
+    >
+      <header className="mb-6 sm:mb-8 text-center">
         <p
-          className="text-xs uppercase tracking-[0.28em] font-bold"
+          className="text-[10px] sm:text-xs uppercase tracking-[0.24em] sm:tracking-[0.28em] font-bold"
           style={{ color: "var(--color-purple)" }}
         >
           Chat with the matchmaker
         </p>
         <h1
-          className="font-display text-4xl sm:text-5xl mt-2"
-          style={{ fontWeight: 800, letterSpacing: "-0.035em" }}
+          className="font-display text-[2rem] sm:text-5xl mt-2 leading-[1.05]"
+          style={{ fontWeight: 800, letterSpacing: "-0.03em" }}
         >
           What&apos;s the night looking like?
         </h1>
         <div className="mt-3 flex justify-center">
-          <Squiggle width={180} height={12} color="var(--color-coral)" />
+          <Squiggle width={140} height={12} color="var(--color-coral)" />
         </div>
       </header>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-4 sm:gap-5">
         <AnimatePresence initial={false}>
           {messages.map((msg) =>
             msg.role === "user" ? (
@@ -199,7 +204,7 @@ function UserBubble({ text }: { text: string }) {
       className="flex justify-end"
     >
       <div
-        className="max-w-[80%] rounded-3xl border-2 border-ink px-5 py-3 text-[0.98rem] leading-snug"
+        className="max-w-[86%] sm:max-w-[80%] rounded-3xl border-2 border-ink px-4 sm:px-5 py-2.5 sm:py-3 text-[0.95rem] sm:text-base leading-snug break-words"
         style={{
           background: "var(--color-coral)",
           color: "white",
@@ -224,11 +229,11 @@ function AssistantBubble({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
-        className="flex items-start gap-3"
+        className="flex items-start gap-2 sm:gap-3"
       >
         <Avatar />
         <div
-          className="rounded-3xl border-2 border-ink px-5 py-4"
+          className="rounded-3xl border-2 border-ink px-4 sm:px-5 py-3 sm:py-4"
           style={{
             background: "white",
             boxShadow: "3px 3px 0 var(--color-ink)",
@@ -250,12 +255,12 @@ function AssistantBubble({
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
-        className="flex items-start gap-3"
+        className="flex items-start gap-2 sm:gap-3"
       >
         <Avatar />
-        <div className="card card--coral p-4 max-w-[88%]">
+        <div className="card card--coral p-4 max-w-[90%] min-w-0">
           <p className="font-display text-lg mb-1">Bother.</p>
-          <p className="text-sm opacity-90">{msg.error}</p>
+          <p className="text-sm opacity-90 break-words">{msg.error}</p>
           <p className="text-sm opacity-80 mt-2">
             The AI might not be reachable here.{" "}
             <Link
@@ -275,13 +280,13 @@ function AssistantBubble({
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.22 }}
-      className="flex items-start gap-3"
+      className="flex items-start gap-2 sm:gap-3"
     >
       <Avatar />
       <div className="flex-1 min-w-0">
         {msg.content && (
           <div
-            className="rounded-3xl border-2 border-ink px-5 py-3 text-[0.98rem] leading-snug inline-block max-w-[88%]"
+            className="rounded-3xl border-2 border-ink px-4 sm:px-5 py-2.5 sm:py-3 text-[0.95rem] sm:text-base leading-snug inline-block max-w-full sm:max-w-[88%] break-words"
             style={{
               background: "white",
               boxShadow: "3px 3px 0 var(--color-ink)",
@@ -334,13 +339,12 @@ function PickCard({ pick, index }: { pick: RankedPick; index: number }) {
 function Avatar() {
   return (
     <div
-      className="w-10 h-10 shrink-0 rounded-full border-2 border-ink flex items-center justify-center font-display"
+      className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-full border-2 border-ink flex items-center justify-center font-display text-base sm:text-lg"
       style={{
         background: "var(--color-purple-hot)",
         color: "white",
         boxShadow: "2px 2px 0 var(--color-ink)",
         fontWeight: 800,
-        fontSize: "1.1rem",
       }}
       aria-hidden="true"
     >
@@ -378,9 +382,9 @@ function SuggestionStickers({ onPick }: { onPick: (s: string) => void }) {
       initial={{ opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: 0.15 }}
-      className="pl-[3.25rem]"
+      className="pl-0 sm:pl-[3.25rem]"
     >
-      <p className="text-xs uppercase tracking-[0.2em] font-bold ink-soft mb-3">
+      <p className="text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold ink-soft mb-2 sm:mb-3">
         Or tap an idea →
       </p>
       <div className="flex flex-wrap gap-2">
@@ -388,7 +392,7 @@ function SuggestionStickers({ onPick }: { onPick: (s: string) => void }) {
           <button
             key={s}
             onClick={() => onPick(s)}
-            className="sticker"
+            className="sticker text-left"
             style={{
               background: i % 2 === 0 ? "white" : "var(--color-butter)",
             }}
@@ -421,11 +425,28 @@ const Composer = forwardRef<HTMLTextAreaElement, ComposerProps>(function Compose
     }
   }
 
+  const canSend = !disabled && !!value.trim();
+
   return (
-    <div className="fixed bottom-0 inset-x-0 z-20 pointer-events-none">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-5 pointer-events-auto">
+    <div
+      className="fixed bottom-0 inset-x-0 z-20 pointer-events-none"
+      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+    >
+      {/* Fade above the composer so content scrolling behind it doesn't hard-cut */}
+      <div
+        aria-hidden="true"
+        className="h-6 sm:h-8 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to top, var(--color-cream), transparent)",
+        }}
+      />
+      <div
+        className="max-w-4xl mx-auto px-3 sm:px-6 pb-3 sm:pb-5 pointer-events-auto"
+        style={{ background: "var(--color-cream)" }}
+      >
         <div
-          className="flex items-end gap-2 rounded-[26px] border-2 border-ink bg-white p-2"
+          className="flex items-end gap-2 rounded-[22px] sm:rounded-[26px] border-2 border-ink bg-white p-1.5 sm:p-2"
           style={{ boxShadow: "4px 4px 0 var(--color-ink)" }}
         >
           <textarea
@@ -436,23 +457,43 @@ const Composer = forwardRef<HTMLTextAreaElement, ComposerProps>(function Compose
             rows={1}
             placeholder="Tell me the vibe…"
             disabled={disabled}
-            className="flex-1 resize-none bg-transparent outline-none px-3 py-2 text-[1rem] leading-snug min-h-[44px] max-h-[160px]"
-            style={{ fontFamily: "var(--font-sans)" }}
+            className="flex-1 resize-none bg-transparent outline-none px-3 py-2 leading-snug min-h-[44px] max-h-[140px]"
+            // 16px minimum font-size prevents iOS Safari from auto-zooming on focus
+            style={{ fontFamily: "var(--font-sans)", fontSize: "16px" }}
           />
           <button
             onClick={onSend}
-            disabled={disabled || !value.trim()}
-            className="btn btn--purple shrink-0"
+            disabled={!canSend}
+            className="btn btn--purple shrink-0 px-3 sm:px-4 h-11 sm:h-auto"
             style={{
-              padding: "0.7rem 1.1rem",
-              opacity: disabled || !value.trim() ? 0.5 : 1,
+              opacity: canSend ? 1 : 0.5,
+              padding: undefined,
             }}
-            aria-label="Send"
+            aria-label={disabled ? "Sending" : "Send"}
           >
-            {disabled ? "…" : "Send ✦"}
+            {disabled ? (
+              <span aria-hidden="true">…</span>
+            ) : (
+              <>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12l16-8-6 16-3-7-7-1z" />
+                </svg>
+                <span className="hidden sm:inline">Send</span>
+              </>
+            )}
           </button>
         </div>
-        <p className="text-[11px] ink-soft text-center mt-2">
+        <p className="text-[11px] ink-soft text-center mt-1.5 sm:mt-2 hidden sm:block">
           Enter to send · Shift+Enter for a new line
         </p>
       </div>

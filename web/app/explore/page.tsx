@@ -67,7 +67,15 @@ export default function ExplorePage() {
   const activeMeta = AXES.find((a) => a.id === axis)!;
 
   return (
-    <div className="flex flex-col" style={{ height: "calc(100vh - 74px)" }}>
+    <div
+      className="flex flex-col"
+      style={{
+        // Use svh (small viewport height) on mobile to avoid iOS Safari
+        // URL-bar push-off; fall back to vh for older browsers.
+        minHeight: "calc(100vh - 74px)",
+        height: "calc(100svh - 74px)",
+      }}
+    >
       <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 pt-5 pb-3 shrink-0 space-y-3">
         <div>
           <h1 className="font-display text-3xl sm:text-4xl">Wander the bubble map</h1>

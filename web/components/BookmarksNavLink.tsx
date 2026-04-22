@@ -15,7 +15,7 @@ export function BookmarksNavLink() {
           ? `Your ${count} bookmarked show${count === 1 ? "" : "s"}`
           : "Bookmarks"
       }
-      className="px-3 py-1.5 rounded-full hover:bg-ink hover:text-cream transition-colors font-medium inline-flex items-center gap-1.5"
+      className="px-2 sm:px-3 py-1.5 rounded-full hover:bg-ink hover:text-cream transition-colors font-medium inline-flex items-center gap-1.5"
     >
       <svg
         width="16"
