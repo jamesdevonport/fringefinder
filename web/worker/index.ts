@@ -312,12 +312,27 @@ function extractContent(response: AIResponse): string {
     throw new Error(`model returned errors: ${safeStringify(response.errors)}`);
   }
 
+  const choice = response?.choices?.[0] as
+    | {
+        message?: {
+          content?: unknown;
+          reasoning_content?: unknown;
+          tool_calls?: Array<{ function?: { arguments?: unknown } }>;
+        };
+        delta?: { content?: unknown };
+        text?: unknown;
+      }
+    | undefined;
+
   const candidates: unknown[] = [
     response?.response,
     response?.result,
     response?.output,
-    response?.choices?.[0]?.message?.content,
-    (response?.choices?.[0] as { text?: unknown } | undefined)?.text,
+    choice?.message?.content,
+    choice?.message?.reasoning_content,
+    choice?.message?.tool_calls?.[0]?.function?.arguments,
+    choice?.delta?.content,
+    choice?.text,
     (response as Record<string, unknown>)?.content,
     (response as Record<string, unknown>)?.text,
   ];
@@ -328,11 +343,14 @@ function extractContent(response: AIResponse): string {
     }
   }
 
-  // Log the response shape to CF logs for debugging, and include a short
-  // snippet in the error so it surfaces in the client.
   const keys = Object.keys(response ?? {});
-  const snippet = safeStringify(response).slice(0, 240);
-  console.error("Workers AI returned no content. keys=", keys, "body=", snippet);
+  const snippet = safeStringify(response).slice(0, 800);
+  console.error("Workers AI returned no extractable content.", {
+    keys,
+    choiceShape: choice ? Object.keys(choice) : null,
+    messageShape: choice?.message ? Object.keys(choice.message) : null,
+    body: snippet,
+  });
   throw new Error(
     `empty model response (keys=[${keys.join(",")}], body=${snippet})`,
   );
