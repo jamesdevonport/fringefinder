@@ -60,10 +60,19 @@ interface Env {
         max_tokens?: number;
         temperature?: number;
       },
-    ) => Promise<{ response?: string; choices?: Array<{ message: { content: string } }> }>;
+    ) => Promise<AIResponse>;
   };
   ASSETS: Fetcher;
 }
+
+type AIResponse = {
+  response?: string | null;
+  result?: string | null;
+  output?: string | null;
+  choices?: Array<{ message?: { content?: string | null } }>;
+  errors?: unknown;
+  [k: string]: unknown;
+};
 
 const MODEL = "@cf/moonshotai/kimi-k2.5";
 
@@ -150,38 +159,6 @@ async function handleMatch(request: Request, env: Env): Promise<Response> {
   });
 }
 
-const FILTER_SCHEMA = {
-  name: "fringe_filters",
-  schema: {
-    type: "object",
-    additionalProperties: false,
-    required: ["query", "filters"],
-    properties: {
-      query: { type: "string", description: "One-sentence synthesis of what the user wants." },
-      filters: {
-        type: "object",
-        additionalProperties: false,
-        properties: {
-          genres: { type: "array", items: { type: "string" } },
-          max_min_age: { type: "number" },
-          free_only: { type: "boolean" },
-          duration_bucket: {
-            type: "array",
-            items: { enum: ["≤45 min", "45–75 min", "75+ min"] },
-          },
-          time_of_day: {
-            type: "array",
-            items: { enum: ["Matinee", "Evening", "Late night"] },
-          },
-          weekend_only: { type: "boolean" },
-          under_price: { type: "number" },
-          mood_keywords: { type: "array", items: { type: "string" } },
-        },
-      },
-    },
-  },
-} as const;
-
 async function synthesiseFilters(
   env: Env,
   userBrief: string,
@@ -190,29 +167,49 @@ async function synthesiseFilters(
 
 The user has written one or more turns describing what they want. Later turns refine or override earlier ones — when the [latest] turn conflicts with an earlier turn, the [latest] turn wins.
 
+Respond with ONLY a single minified JSON object — no prose, no markdown fences — matching this exact shape:
+
+{
+  "query": "one-sentence synthesis of what the user wants",
+  "filters": {
+    "genres": ["..."],
+    "max_min_age": <number>,
+    "free_only": <boolean>,
+    "duration_bucket": ["≤45 min" | "45–75 min" | "75+ min"],
+    "time_of_day": ["Matinee" | "Evening" | "Late night"],
+    "weekend_only": <boolean>,
+    "under_price": <number, GBP>,
+    "mood_keywords": ["..."]
+  }
+}
+
+Omit any filter key the user did not request. "filters" itself must be present (use {} if nothing applies).
+
 Available genres (use EXACTLY these strings): "Comedy", "Theatre", "Music & Nightlife", "Cabaret & Variety", "Children & Young People", "Circus Dance & Physical Theatre", "Literature & Spoken Word", "Workshops", "Events & Films", "Tours", "Exhibitions".
 
 Rules:
 - Only set a filter if the user clearly asked for it. Err on the side of leaving filters loose — we rerank semantically afterwards.
-- max_min_age is the highest min_age we'll accept. For "family"/"kids"/"kid-safe"/"squeaky clean", use 5. For "PG-ish"/"teen-friendly", use 12. For "might make you blush"/"adult"/"spicy", leave blank. For "anything goes", leave blank.
-- under_price is a GBP number. "Free only" -> free_only: true. "Under £10" -> 10. "Under £20" -> 20. "Cheap" -> 15. If not mentioned, leave blank.
-- duration_bucket: "short"/"30 min or less" -> ["≤45 min"]. "about an hour" -> ["45–75 min"]. "long"/"75+" -> ["75+ min"]. If unclear, leave blank.
-- time_of_day: match "Matinee"/"Evening"/"Late night". "Any time" -> leave blank.
+- max_min_age is the highest min_age we'll accept. For "family"/"kids"/"kid-safe"/"squeaky clean", use 5. For "PG-ish"/"teen-friendly", use 12. For "might make you blush"/"adult"/"spicy", omit. For "anything goes", omit.
+- under_price is a GBP number. "Free only" -> free_only: true. "Under £10" -> 10. "Under £20" -> 20. "Cheap" -> 15. If not mentioned, omit.
+- duration_bucket: "short"/"30 min or less" -> ["≤45 min"]. "about an hour" -> ["45–75 min"]. "long"/"75+" -> ["75+ min"]. If unclear, omit.
+- time_of_day: match "Matinee"/"Evening"/"Late night". "Any time" -> omit.
 - mood_keywords: 3–6 short adjectives/nouns that capture the vibe (e.g. "absurd", "confessional", "raucous", "warm", "feminist", "surreal").
-- Put the synthesised search query in one readable sentence, e.g. "A warm, funny hour that won't upset the kids."`;
+- Put the synthesised search query in one readable sentence, e.g. "A warm, funny hour that won't upset the kids."
+
+Reply with ONLY the JSON object. Nothing else.`;
 
   const response = await env.AI.run(MODEL, {
     messages: [
       { role: "system", content: system },
       { role: "user", content: userBrief },
     ],
-    response_format: { type: "json_schema", json_schema: FILTER_SCHEMA },
-    max_tokens: 400,
+    response_format: { type: "json_object" },
+    max_tokens: 500,
     temperature: 0.4,
   });
 
   const content = extractContent(response);
-  return JSON.parse(content) as { query: string; filters: MatchFilters };
+  return parseJSON(content) as { query: string; filters: MatchFilters };
 }
 
 function narrow(f: MatchFilters, limit = 200): IndexEntry[] {
@@ -249,39 +246,6 @@ function narrow(f: MatchFilters, limit = 200): IndexEntry[] {
   return sorted;
 }
 
-const RERANK_SCHEMA = {
-  name: "ranked_shows",
-  schema: {
-    type: "object",
-    additionalProperties: false,
-    required: ["reply", "picks"],
-    properties: {
-      reply: {
-        type: "string",
-        description:
-          "One warm conversational sentence to introduce the picks, max ~18 words. No emojis.",
-      },
-      picks: {
-        type: "array",
-        minItems: 1,
-        maxItems: 6,
-        items: {
-          type: "object",
-          required: ["slug", "reason"],
-          additionalProperties: false,
-          properties: {
-            slug: { type: "string" },
-            reason: {
-              type: "string",
-              description: "One sentence, max ~18 words, a warm specific reason.",
-            },
-          },
-        },
-      },
-    },
-  },
-} as const;
-
 async function rerank(
   env: Env,
   userBrief: string,
@@ -291,11 +255,22 @@ async function rerank(
   const catalog = candidates.map(buildLine).join("\n");
   const system = `You are a Brighton Fringe matchmaker chatting with someone. Pick the 6 best-matching shows from the CATALOG for this user's request.
 
-Return JSON matching the schema:
-- "reply": a single warm conversational sentence (max ~18 words) to lead the recommendations. Examples: "Six I'd stake my reputation on — tell me if any miss.", "Here's a cheeky shortlist for a chill evening.", "Trying these — shout if you want me to push weirder or gentler."
-- "picks": 6 items, each with a slug from the CATALOG and a one-sentence reason (max ~18 words), warm and specific ("Belly laughs about growing up too fast — right up your street").
+Respond with ONLY a single minified JSON object — no prose, no markdown fences — matching this exact shape:
 
-Only use slugs that appear in the CATALOG. Do not invent slugs. Rank best to worst.`;
+{
+  "reply": "one warm conversational sentence, max 18 words, no emojis",
+  "picks": [
+    { "slug": "<catalog-slug>", "reason": "one sentence, max 18 words, warm and specific" },
+    ... (exactly 6 picks)
+  ]
+}
+
+"reply" examples: "Six I'd stake my reputation on — tell me if any miss.", "Here's a cheeky shortlist for a chill evening.", "Trying these — shout if you want me to push weirder or gentler."
+"reason" example: "Belly laughs about growing up too fast — right up your street."
+
+Only use slugs that appear verbatim in the CATALOG below. Do not invent slugs. Rank best to worst.
+
+Reply with ONLY the JSON object. Nothing else.`;
 
   const user = `User said:\n${userBrief}\n\nSynthesised query: ${query}\n\nCATALOG:\n${catalog}`;
 
@@ -304,13 +279,13 @@ Only use slugs that appear in the CATALOG. Do not invent slugs. Rank best to wor
       { role: "system", content: system },
       { role: "user", content: user },
     ],
-    response_format: { type: "json_schema", json_schema: RERANK_SCHEMA },
-    max_tokens: 1600,
+    response_format: { type: "json_object" },
+    max_tokens: 1800,
     temperature: 0.55,
   });
 
   const content = extractContent(response);
-  const parsed = JSON.parse(content) as {
+  const parsed = parseJSON(content) as {
     reply?: string;
     picks: Array<{ slug: string; reason: string }>;
   };
@@ -332,17 +307,68 @@ function buildLine(e: IndexEntry): string {
   return `[${e.slug}] ${e.title} | ${e.genre ?? "Other"} | ${age} | ${dur}${price} | ${desc} | ${next} @ ${venue}${free}`;
 }
 
-function extractContent(response: {
-  response?: string;
-  choices?: Array<{ message: { content: string } }>;
-}): string {
-  const raw = response.response ?? response.choices?.[0]?.message?.content ?? "";
-  if (!raw) throw new Error("empty model response");
-  const trimmed = raw.trim();
-  if (trimmed.startsWith("```")) {
-    return trimmed.replace(/^```(?:json)?\s*/i, "").replace(/```$/, "").trim();
+function extractContent(response: AIResponse): string {
+  if (response && typeof response.errors !== "undefined" && response.errors) {
+    throw new Error(`model returned errors: ${safeStringify(response.errors)}`);
   }
-  return trimmed;
+
+  const candidates: unknown[] = [
+    response?.response,
+    response?.result,
+    response?.output,
+    response?.choices?.[0]?.message?.content,
+    (response?.choices?.[0] as { text?: unknown } | undefined)?.text,
+    (response as Record<string, unknown>)?.content,
+    (response as Record<string, unknown>)?.text,
+  ];
+
+  for (const c of candidates) {
+    if (typeof c === "string" && c.trim()) {
+      return stripFences(c.trim());
+    }
+  }
+
+  // Log the response shape to CF logs for debugging, and include a short
+  // snippet in the error so it surfaces in the client.
+  const keys = Object.keys(response ?? {});
+  const snippet = safeStringify(response).slice(0, 240);
+  console.error("Workers AI returned no content. keys=", keys, "body=", snippet);
+  throw new Error(
+    `empty model response (keys=[${keys.join(",")}], body=${snippet})`,
+  );
+}
+
+function stripFences(s: string): string {
+  if (s.startsWith("```")) {
+    return s.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "").trim();
+  }
+  return s;
+}
+
+function parseJSON(raw: string): unknown {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    // Some models prepend thinking or a preamble before the JSON. Grab the
+    // first {...} or [...] block.
+    const match = raw.match(/[\{\[][\s\S]*[\}\]]/);
+    if (match) {
+      try {
+        return JSON.parse(match[0]);
+      } catch {
+        /* fall through */
+      }
+    }
+    throw new Error(`JSON parse failed: ${raw.slice(0, 160)}`);
+  }
+}
+
+function safeStringify(v: unknown): string {
+  try {
+    return JSON.stringify(v);
+  } catch {
+    return String(v);
+  }
 }
 
 function describe(e: unknown): string {
