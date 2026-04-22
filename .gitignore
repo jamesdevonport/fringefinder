@@ -1,0 +1,19 @@
+# Python scraper environment
+.venv/
+__pycache__/
+*.pyc
+
+# Scraper runtime artifacts (HTML cache, transient failure lists, logs)
+cache/
+failed.json
+run.log
+sample.html
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor state
+.idea/
+.vscode/
+*.swp
