@@ -276,8 +276,11 @@ export function ForceGraph({
         </span>
       </div>
 
-      {/* Controls — bottom-right */}
-      <div className="absolute bottom-3 right-3 flex flex-col gap-1 pointer-events-auto">
+      {/* Controls — bottom-right, clear of the iPhone home indicator */}
+      <div
+        className="absolute right-3 flex flex-col gap-1 pointer-events-auto"
+        style={{ bottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+      >
         {view.kind !== "root" && (
           <button onClick={back} className="btn btn--ink text-xs py-2 px-3 shadow-none">
             ← back
@@ -325,9 +328,13 @@ export function ForceGraph({
 
       {/* Root helper */}
       {!hover && view.kind === "root" && (
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-          <p className="text-xs uppercase tracking-[0.22em] font-bold text-ink-soft">
-            drag to pan · scroll to zoom
+        <div
+          className="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none"
+          style={{ bottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+        >
+          <p className="text-[10px] sm:text-xs uppercase tracking-[0.22em] font-bold text-ink-soft">
+            <span className="hidden sm:inline">drag to pan · scroll to zoom</span>
+            <span className="sm:hidden">drag to pan · pinch to zoom</span>
           </p>
         </div>
       )}

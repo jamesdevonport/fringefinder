@@ -79,14 +79,14 @@ export function BrowseClient({ facets }: { facets: Facets }) {
 
   return (
     <div>
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-4">
+      <header className="max-w-7xl mx-auto px-3 sm:px-6 pt-5 sm:pt-8 pb-3 sm:pb-4">
         <h1
-          className="font-display text-4xl sm:text-5xl"
+          className="font-display text-[2rem] sm:text-5xl leading-[1.05]"
           style={{ fontWeight: 800, letterSpacing: "-0.03em" }}
         >
           Browse every show
         </h1>
-        <p className="ink-soft mt-1 text-sm">
+        <p className="ink-soft mt-1 text-xs sm:text-sm">
           {(events?.length ?? 0).toLocaleString("en-GB")} shows at Brighton Fringe 2026.
           Search or filter to find yours.
         </p>

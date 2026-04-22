@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
   countActive,
   type DatePreset,
@@ -128,7 +128,7 @@ export function FilterBar({
       style={{ background: "rgba(247, 243, 251, 0.96)", backdropFilter: "blur(10px)" }}
     >
       {/* Row 1 — BIG search */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-2">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 pt-3 sm:pt-4 pb-2">
         <BigSearch
           value={filter.q}
           onChange={(q) => onChange({ ...filter, q })}
@@ -139,7 +139,7 @@ export function FilterBar({
       </div>
 
       {/* Row 2 — pills + sort */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-3 flex items-center gap-2 flex-wrap">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 pb-2.5 sm:pb-3 flex items-center gap-2 flex-wrap">
         {/* Desktop / tablet: inline pill row */}
         <div className="hidden md:flex flex-wrap items-center gap-1.5">
           {pills.map((p) => (
@@ -166,13 +166,27 @@ export function FilterBar({
         {/* Mobile: one button opens a full sheet */}
         <button
           onClick={() => setSheetOpen(true)}
-          className="md:hidden inline-flex items-center gap-2 chip"
+          className="md:hidden inline-flex items-center gap-2 chip text-sm"
+          style={{
+            padding: "0.5rem 0.9rem",
+            background:
+              activeCount > 0 ? "var(--color-purple)" : "var(--color-lilac-soft)",
+            color: activeCount > 0 ? "white" : "var(--color-ink)",
+          }}
           data-active={activeCount > 0}
           aria-haspopup="dialog"
           aria-expanded={sheetOpen}
         >
           <IconSliders />
-          Filters{activeCount > 0 ? ` · ${activeCount}` : ""}
+          <span className="font-semibold">Filters</span>
+          {activeCount > 0 && (
+            <span
+              className="tabular-nums text-xs rounded-full px-1.5 font-bold"
+              style={{ background: "rgba(255,255,255,0.25)" }}
+            >
+              {activeCount}
+            </span>
+          )}
         </button>
 
         <div className="ml-auto flex items-center gap-3">
@@ -182,7 +196,7 @@ export function FilterBar({
           {activeCount > 0 && (
             <button
               onClick={onReset}
-              className="text-xs font-bold uppercase tracking-wider"
+              className="hidden md:inline text-xs font-bold uppercase tracking-wider"
               style={{ color: "var(--color-purple)" }}
             >
               Clear all
@@ -230,46 +244,46 @@ function BigSearch({
   totalCount: number;
   placeholder?: string;
 }) {
+  const narrow = useNarrowViewport();
   const ph =
     placeholder ??
-    `Search ${totalCount.toLocaleString("en-GB")} shows — try "komedia", "clown", a company…`;
+    (narrow
+      ? `Search ${totalCount.toLocaleString("en-GB")} shows…`
+      : `Search ${totalCount.toLocaleString("en-GB")} shows — try "komedia", "clown", a company…`);
+
   return (
     <div className="flex items-center gap-3">
       <div className="relative flex-1">
         <span
           aria-hidden="true"
-          className="absolute left-4 top-1/2 -translate-y-1/2"
+          className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2"
           style={{ color: "var(--color-purple)" }}
         >
-          <IconSearch size={22} />
+          <IconSearch size={20} />
         </span>
         <input
           type="search"
           placeholder={ph}
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="w-full border-2 border-ink rounded-full bg-white outline-none transition-shadow"
+          className="w-full border-2 border-ink rounded-full bg-white outline-none transition-shadow h-12 sm:h-14 pl-10 sm:pl-[52px] text-[15px] sm:text-[17px] font-medium"
           style={{
-            height: 56,
-            paddingLeft: 52,
-            paddingRight: value ? 52 : 20,
-            fontSize: 17,
-            fontWeight: 500,
-            boxShadow: "4px 4px 0 var(--color-purple)",
+            paddingRight: value ? 48 : 16,
+            boxShadow: "3px 3px 0 var(--color-purple)",
           }}
           aria-label="Search shows"
           onFocus={(e) => {
-            e.currentTarget.style.boxShadow = "6px 6px 0 var(--color-purple-hot)";
+            e.currentTarget.style.boxShadow = "5px 5px 0 var(--color-purple-hot)";
           }}
           onBlur={(e) => {
-            e.currentTarget.style.boxShadow = "4px 4px 0 var(--color-purple)";
+            e.currentTarget.style.boxShadow = "3px 3px 0 var(--color-purple)";
           }}
         />
         {value && (
           <button
             onClick={() => onChange("")}
             aria-label="Clear search"
-            className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-ink flex items-center justify-center text-sm hover:bg-paper"
+            className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border-2 border-ink flex items-center justify-center text-sm hover:bg-paper"
             style={{ background: "white" }}
           >
             ✕
@@ -628,18 +642,27 @@ function MobileFilterSheet({
       onClick={onClose}
     >
       <div
-        className="ml-auto h-full w-[min(420px,100%)] bg-white border-l-2 border-ink flex flex-col"
+        className="ml-auto w-[min(420px,100%)] bg-white border-l-2 border-ink flex flex-col"
+        style={{ height: "100dvh" }}
         onClick={(e) => e.stopPropagation()}
       >
-        <header className="p-4 flex items-center justify-between border-b-2 border-ink shrink-0">
+        <header
+          className="px-4 pt-3 pb-3 flex items-center justify-between border-b-2 border-ink shrink-0"
+          style={{ paddingTop: "calc(0.75rem + env(safe-area-inset-top))" }}
+        >
           <h2 className="font-display text-xl" style={{ fontWeight: 800 }}>
             Filters
           </h2>
-          <button onClick={onClose} aria-label="Close filters" className="chip">
-            ✕ Close
+          <button
+            onClick={onClose}
+            aria-label="Close filters"
+            className="rounded-full border-2 border-ink w-9 h-9 flex items-center justify-center text-lg hover:bg-paper"
+            style={{ background: "white" }}
+          >
+            ✕
           </button>
         </header>
-        <div className="flex-1 overflow-y-auto p-4 space-y-6">
+        <div className="flex-1 overflow-y-auto overscroll-contain p-4 space-y-6">
           {groups.map((g) => (
             <section key={g.kind}>
               <h3 className="text-xs font-bold uppercase tracking-[0.22em] ink-soft mb-2">
@@ -655,7 +678,10 @@ function MobileFilterSheet({
             </section>
           ))}
         </div>
-        <footer className="p-4 border-t-2 border-ink flex gap-2 shrink-0">
+        <footer
+          className="px-4 pt-3 border-t-2 border-ink flex gap-2 shrink-0"
+          style={{ paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+        >
           <button
             onClick={() => {
               onReset();
@@ -931,6 +957,22 @@ function IconSliders() {
       <circle cx="12" cy="12" r="1.5" fill="currentColor" />
     </svg>
   );
+}
+
+// Track whether the viewport is below Tailwind's `sm:` breakpoint (640 px).
+// Used to swap in shorter labels/placeholders on mobile without awkward CSS.
+function useNarrowViewport(): boolean {
+  const subscribe = (cb: () => void) => {
+    if (typeof window === "undefined") return () => {};
+    const mq = window.matchMedia("(max-width: 639px)");
+    mq.addEventListener("change", cb);
+    return () => mq.removeEventListener("change", cb);
+  };
+  const getSnapshot = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(max-width: 639px)").matches;
+  const getServerSnapshot = () => false;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
 
 // Build the "When" summary string for the pill when nothing's active

@@ -76,10 +76,12 @@ export default function ExplorePage() {
         height: "calc(100svh - 74px)",
       }}
     >
-      <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 pt-5 pb-3 shrink-0 space-y-3">
+      <div className="max-w-7xl w-full mx-auto px-3 sm:px-6 pt-4 sm:pt-5 pb-2 sm:pb-3 shrink-0 space-y-2 sm:space-y-3">
         <div>
-          <h1 className="font-display text-3xl sm:text-4xl">Wander the bubble map</h1>
-          <Squiggle width={160} height={10} color="var(--color-purple)" />
+          <h1 className="font-display text-2xl sm:text-4xl leading-tight">
+            Wander the bubble map
+          </h1>
+          <Squiggle width={140} height={10} color="var(--color-purple)" />
         </div>
 
         <AxisPicker axis={axis} onChange={setAxis} />
@@ -117,11 +119,15 @@ function AxisPicker({
 }) {
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="text-sm font-semibold">Show me shows by</span>
+      <span className="hidden sm:inline text-sm font-semibold">
+        Show me shows by
+      </span>
       <div
         role="radiogroup"
         aria-label="How to group the map"
-        className="flex flex-wrap items-center gap-1.5 rounded-full border-2 border-ink p-1"
+        // Horizontally scroll on narrow screens so the 5 axis buttons never
+        // wrap into a second row and crowd the map below.
+        className="flex items-center gap-1 sm:gap-1.5 rounded-full border-2 border-ink p-1 w-full sm:w-auto overflow-x-auto scrollbar-thin"
         style={{ background: "white" }}
       >
         {AXES.map((a) => {
@@ -132,7 +138,7 @@ function AxisPicker({
               role="radio"
               aria-checked={active}
               onClick={() => onChange(a.id)}
-              className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors"
+              className="flex items-center gap-1 sm:gap-1.5 rounded-full px-2.5 sm:px-3 py-1.5 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap shrink-0"
               style={
                 active
                   ? {
@@ -143,7 +149,7 @@ function AxisPicker({
                   : { color: "var(--color-ink)" }
               }
             >
-              <AxisIcon axis={a.id} size={16} />
+              <AxisIcon axis={a.id} size={14} />
               <span>{a.label}</span>
             </button>
           );
@@ -155,21 +161,21 @@ function AxisPicker({
 
 function HelperRow({ activeMeta }: { activeMeta: AxisMeta }) {
   return (
-    <div className="flex items-center gap-3 flex-wrap">
+    <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
       <p
-        className="font-display text-lg"
+        className="font-display text-base sm:text-lg leading-tight"
         style={{ color: "var(--color-purple-deep)", fontWeight: 700 }}
       >
         {activeMeta.prompt}
       </p>
-      <p className="ink-soft text-sm">
-        Each blob is a {activeMeta.blobIs}.{" "}
-        <span className="hidden sm:inline">
-          Click one to see its shows as thumbnails. Bubble colour = genre.
-        </span>
-        <span className="sm:hidden">Click one to see its shows.</span>
+      <p className="ink-soft text-xs sm:text-sm hidden sm:inline">
+        Each blob is a {activeMeta.blobIs}. Tap one to see its shows. Bubble
+        colour = genre.
       </p>
-      <Link href="/browse/" className="ml-auto text-sm wobble-underline">
+      <Link
+        href="/browse/"
+        className="ml-auto text-xs sm:text-sm wobble-underline whitespace-nowrap"
+      >
         Prefer filters?
       </Link>
     </div>
