@@ -194,12 +194,25 @@ function SiteFooter() {
           </a>{" "}
           — please book tickets through them.
         </p>
-        <p
-          className="text-sm font-semibold uppercase tracking-wider"
-          style={{ color: "var(--color-purple-deep)" }}
-        >
-          ✦ Made with squiggles &amp; glee
-        </p>
+        <div className="flex flex-col sm:items-end gap-1">
+          <p
+            className="text-sm font-semibold uppercase tracking-wider"
+            style={{ color: "var(--color-purple-deep)" }}
+          >
+            ✦ Made with squiggles &amp; glee
+          </p>
+          <p className="text-xs ink-soft">
+            Built by{" "}
+            <a
+              href="https://x.com/jamesdevonport"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="wobble-underline font-semibold"
+            >
+              @jamesdevonport
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
