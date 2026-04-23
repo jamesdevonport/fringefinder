@@ -5,9 +5,16 @@ import { buildFacets } from "@/lib/facets";
 import { CalendarClient } from "@/components/Calendar/CalendarClient";
 
 export const metadata: Metadata = {
-  title: "Brighton Fringe 2026 calendar · Fringe Finder",
+  title: "Brighton Fringe 2026 calendar",
   description:
     "Every Brighton Fringe 2026 show laid out day by day. Filter by genre, venue, price, audience, and more — then see what's on tonight, this weekend, or any date in May.",
+  alternates: { canonical: "/calendar/" },
+  openGraph: {
+    title: "Brighton Fringe 2026 calendar",
+    description:
+      "Every Brighton Fringe 2026 show laid out day by day. See what's on tonight, this weekend, or any date in May.",
+    url: "/calendar/",
+  },
 };
 
 export default function CalendarPage() {

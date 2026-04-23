@@ -4,6 +4,7 @@ import { EventCard } from "@/components/EventCard";
 import { HeroMosaic } from "@/components/HeroMosaic";
 import { Squiggle, Star } from "@/components/Squiggle";
 import type { EventSearch } from "@/lib/types";
+import { genreSlugFromName, paths } from "@/lib/seo";
 
 const topGenresOrder = [
   "Comedy",
@@ -202,20 +203,24 @@ export default function Home() {
           >
             Lineup at a glance →
           </span>
-          {topGenres.map((g) => (
-            <Link
-              key={g.genre}
-              href={`/browse/?g=${encodeURIComponent(g.genre)}`}
-              className="inline-flex items-center gap-2 text-sm hover:underline"
-            >
-              <span
-                className="w-3 h-3 rounded-full border-2 border-ink"
-                style={{ background: genreSwatch(g.genre) }}
-              />
-              <span className="font-medium">{g.genre}</span>
-              <span className="ink-soft tabular-nums">{g.count}</span>
-            </Link>
-          ))}
+          {topGenres.map((g) => {
+            const slug = genreSlugFromName(g.genre);
+            const href = slug ? paths.genre(slug) : `/browse/?g=${encodeURIComponent(g.genre)}`;
+            return (
+              <Link
+                key={g.genre}
+                href={href}
+                className="inline-flex items-center gap-2 text-sm hover:underline"
+              >
+                <span
+                  className="w-3 h-3 rounded-full border-2 border-ink"
+                  style={{ background: genreSwatch(g.genre) }}
+                />
+                <span className="font-medium">{g.genre}</span>
+                <span className="ink-soft tabular-nums">{g.count}</span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 

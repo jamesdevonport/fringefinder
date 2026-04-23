@@ -5,9 +5,16 @@ import { buildFacets } from "@/lib/facets";
 import { BrowseClient } from "@/components/Browse/BrowseClient";
 
 export const metadata: Metadata = {
-  title: "Browse every Brighton Fringe 2026 show · Fringe Finder",
+  title: "Browse every Brighton Fringe 2026 show",
   description:
-    "Filter 800+ Brighton Fringe 2026 shows by venue, date, genre, price, audience, accessibility, and more.",
+    "Filter 800+ Brighton Fringe 2026 shows by venue, date, genre, price, audience, accessibility, and more. Unofficial guide.",
+  alternates: { canonical: "/browse/" },
+  openGraph: {
+    title: "Browse every Brighton Fringe 2026 show",
+    description:
+      "Filter 800+ Brighton Fringe 2026 shows by venue, date, genre, price, audience, accessibility, and more.",
+    url: "/browse/",
+  },
 };
 
 export default function BrowsePage() {

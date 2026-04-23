@@ -7,6 +7,15 @@ import { formatDate, formatPriceRange } from "@/lib/search";
 import { EventCard } from "@/components/EventCard";
 import { Squiggle } from "@/components/Squiggle";
 import { BookmarkToggleButton } from "@/components/BookmarkToggleButton";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  eventDescription,
+  eventTitle,
+  FESTIVAL_LABEL,
+  genreSlugFromName,
+  paths,
+} from "@/lib/seo";
+import { breadcrumbSchema, eventSchema } from "@/lib/schema";
 import type { EventSearch } from "@/lib/types";
 
 export function generateStaticParams() {
@@ -20,10 +29,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const e = getEvent(slug);
-  if (!e) return { title: "Show not found · Fringe Finder" };
+  if (!e) return { title: "Show not found" };
+  const canonical = paths.event(slug);
+  const description = eventDescription(e);
+  const ogImage = e.hero_image || "/og-image.jpg";
   return {
-    title: `${e.title} · Fringe Finder`,
-    description: e.short_description || undefined,
+    title: eventTitle(e),
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title: `${e.title} — ${FESTIVAL_LABEL}`,
+      description,
+      type: "article",
+      url: canonical,
+      images: [{ url: ogImage, alt: `${e.title} — ${FESTIVAL_LABEL}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${e.title} — ${FESTIVAL_LABEL}`,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
@@ -36,6 +62,7 @@ export default async function EventPage({
   const e = getEvent(slug);
   if (!e) notFound();
 
+  const genreSlug = genreSlugFromName(e.genre);
   const similar = e.similar
     .map((s) => events.find((ev) => ev.slug === s))
     .filter((ev): ev is NonNullable<typeof ev> => !!ev)
@@ -66,15 +93,38 @@ export default async function EventPage({
   const price = formatPriceRange(e.price_min, e.price_max, e.has_free_performance);
   const runMinutes = e.duration_mins ? `${e.duration_mins} min` : null;
 
+  const primaryVenue = e.performances[0]?.venue_name ?? e.venue_list[0] ?? null;
+  const primaryVenueSlug =
+    e.performances[0]?.venue_slug ?? e.venue_slug_list[0] ?? null;
+  const summaryLine = [
+    `${e.title} is`,
+    e.genre ? `a ${e.genre} show` : "a show",
+    e.company ? `by ${e.company}` : null,
+    primaryVenue ? `playing ${e.performances.length} ${e.performances.length === 1 ? "performance" : "performances"} at ${primaryVenue}` : null,
+    `during ${FESTIVAL_LABEL}.`,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const breadcrumbs = [
+    { name: "Home", path: "/" },
+    { name: "Browse", path: paths.browse() },
+    ...(e.genre && genreSlug
+      ? [{ name: e.genre, path: paths.genre(genreSlug) }]
+      : []),
+    { name: e.title, path: paths.event(slug) },
+  ];
+
   return (
     <article>
+      <JsonLd data={[eventSchema(e), breadcrumbSchema(breadcrumbs)]} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-8">
-        <nav className="text-sm ink-soft mb-4 flex gap-2 items-center">
-          <Link href="/browse/" className="wobble-underline">Browse</Link>
+        <nav className="text-sm ink-soft mb-4 flex gap-2 items-center" aria-label="Breadcrumb">
+          <Link href={paths.browse()} className="wobble-underline">Browse</Link>
           <span>/</span>
-          {e.genre && (
+          {e.genre && genreSlug && (
             <>
-              <Link href={`/browse/?g=${encodeURIComponent(e.genre)}`} className="wobble-underline">
+              <Link href={paths.genre(genreSlug)} className="wobble-underline">
                 {e.genre}
               </Link>
               <span>/</span>
@@ -91,7 +141,7 @@ export default async function EventPage({
               {e.hero_image ? (
                 <Image
                   src={e.hero_image}
-                  alt={e.title}
+                  alt={`${e.title} — ${FESTIVAL_LABEL}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 60vw"
                   className="object-cover"
@@ -106,8 +156,13 @@ export default async function EventPage({
           </div>
 
           <div>
-            {e.genre && (
-              <span className="sticker sticker--purple text-sm mb-3">{e.genre}</span>
+            {e.genre && genreSlug && (
+              <Link
+                href={paths.genre(genreSlug)}
+                className="sticker sticker--purple text-sm mb-3 inline-block"
+              >
+                {e.genre}
+              </Link>
             )}
             <h1 className="font-display text-4xl sm:text-5xl leading-tight mb-3">
               {e.title}
@@ -121,6 +176,7 @@ export default async function EventPage({
                 by {e.company}
               </p>
             )}
+            <p className="mt-4 text-sm ink-soft leading-relaxed">{summaryLine}</p>
 
             <dl className="grid grid-cols-2 gap-3 mt-5">
               {runMinutes && <InfoStat label="Length" value={runMinutes} />}
@@ -161,7 +217,7 @@ export default async function EventPage({
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 grid gap-12 md:grid-cols-[1.5fr_1fr]">
         <section>
-          <h2 className="font-display text-2xl mb-3">The pitch</h2>
+          <h2 className="font-display text-2xl mb-3">About {e.title}</h2>
           <div className="prose max-w-none text-ink-soft leading-relaxed whitespace-pre-line">
             {e.description}
           </div>
@@ -214,7 +270,7 @@ export default async function EventPage({
                   <div className="text-sm font-medium">{p.time_text ?? "—"}</div>
                   {p.venue_name && (
                     <Link
-                      href={`/venues/${p.venue_slug}/`}
+                      href={paths.venue(p.venue_slug ?? "")}
                       className="text-xs ink-soft wobble-underline"
                     >
                       {p.venue_name}
@@ -229,6 +285,18 @@ export default async function EventPage({
               </li>
             ))}
           </ul>
+          {primaryVenue && primaryVenueSlug && (
+            <p className="mt-4 text-xs ink-soft">
+              See every show at{" "}
+              <Link
+                href={paths.venue(primaryVenueSlug)}
+                className="wobble-underline font-semibold"
+              >
+                {primaryVenue}
+              </Link>
+              .
+            </p>
+          )}
         </section>
       </div>
 
@@ -240,6 +308,17 @@ export default async function EventPage({
               <EventCard key={s.slug} event={s} />
             ))}
           </div>
+        </section>
+      )}
+
+      {e.genre && genreSlug && (
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-4">
+          <p className="text-sm ink-soft">
+            More {e.genre.toLowerCase()} at {FESTIVAL_LABEL}:{" "}
+            <Link href={paths.genre(genreSlug)} className="wobble-underline font-semibold">
+              browse every {e.genre.toLowerCase()} show →
+            </Link>
+          </p>
         </section>
       )}
     </article>
