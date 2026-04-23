@@ -45,6 +45,7 @@ yarn-error.log*
 # generated data artifacts (rebuilt from ../results.json)
 /data
 /public/events-search.json
+/public/events-performances.json
 
 # typescript
 *.tsbuildinfo

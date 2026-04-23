@@ -245,6 +245,16 @@ function main() {
   const search = events.map(toSearch);
   writeFileSync(resolve(OUT_PUBLIC, "events-search.json"), JSON.stringify(search));
 
+  // Per-event performance list, keyed by slug. Used by /bookmarks to show a
+  // time-ordered day-planner view. Loaded only on that page — kept out of the
+  // main search bundle because most pages don't need times/venues per showing.
+  const perfMap: Record<string, Performance[]> = {};
+  for (const e of events) perfMap[e.slug] = e.performances;
+  writeFileSync(
+    resolve(OUT_PUBLIC, "events-performances.json"),
+    JSON.stringify(perfMap),
+  );
+
   // Venue map for browse + venue pages
   const venueMap = new Map<string, { slug: string; name: string; eventSlugs: string[] }>();
   for (const e of events) {
