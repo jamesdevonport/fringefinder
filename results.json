@@ -12682,150 +12682,6 @@
     "lastmod": "2026-04-07T11:16:45+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/chemistry/",
-    "slug": "chemistry",
-    "title": "Chemistry",
-    "description": "Steph’s battling chronic depression. Jamie’s crashed after pushing himself way too far, way too fast. They meet in a psychiatrist’s waiting room - hardly the stuff that rom-coms are made of - but the spark is instant and undeniable. What follows is messy, electric and unexpectedly beautiful. When your own brain feels like the enemy, is falling in love the bravest thing you can do - or the most reckless? Studies show that 1 in 4 adults in England will experience a mental health problem each year. Darkly funny and deeply moving, Jacob Marx Rice's Chemistry is a frank exploration of how we manage love - and life - when we rely on chemicals to keep us balanced.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tSteph’s battling chronic depression. Jamie’s crashed after pushing himself way too far, way too fast. They meet in a psychiatrist’s waiting room - hardly the stuff that rom-coms are made of - but the spark is instant and undeniable. What follows is messy, electric and unexpectedly beautiful. When your own brain feels like the enemy, is falling in love the bravest thing you can do - or the most reckless?<br><br>Studies show that 1 in 4 adults in England will experience a mental health problem each year. <br><br>Darkly funny and deeply moving, Jacob Marx Rice's Chemistry is a frank exploration of how we manage love - and life - when we rely on chemicals to keep us balanced.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "★★★★★ Hit comes to the Brighton Fringe: Witty and tender, Chemistry is a life-affirming love story sparked in therapy - Grania Dean Studio (Lantern Theatre @ ACT) - Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
-    "og_description": "★★★★★ Hit comes to the Brighton Fringe: Witty and tender, Chemistry is a life-affirming love story sparked in therapy - Grania Dean Studio (Lantern Theatre @ ACT) - Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
-    "date_modified": "2026-04-07T11:16:53+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-11-2026-141925-9435.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-11-2026-142304-5074.jpg"
-    ],
-    "genre": "Theatre",
-    "duration": "60 mins",
-    "company": "Special Someone Productions",
-    "website": null,
-    "age_suitability": "18+ (Guideline)",
-    "age": {
-      "min_age": 18,
-      "type": "Guideline",
-      "raw": "18+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome"
-    ],
-    "content_warnings": [
-      "Strong Language",
-      "References to Mental Illness",
-      "References to Suicide/Self Harm"
-    ],
-    "socials": {
-      "instagram": "https://www.instagram.com/specialsomeoneprod"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-15",
-        "date_text": "May 15, 2026",
-        "time_text": "9:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636247"
-      },
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "9:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636248"
-      },
-      {
-        "date_iso": "2026-05-17",
-        "date_text": "May 17, 2026",
-        "time_text": "2:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636253"
-      },
-      {
-        "date_iso": "2026-05-18",
-        "date_text": "May 18, 2026",
-        "time_text": "9:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636249"
-      },
-      {
-        "date_iso": "2026-05-19",
-        "date_text": "May 19, 2026",
-        "time_text": "9:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636250"
-      },
-      {
-        "date_iso": "2026-05-20",
-        "date_text": "May 20, 2026",
-        "time_text": "9:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636251"
-      },
-      {
-        "date_iso": "2026-05-21",
-        "date_text": "May 21, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
-        "venue_slug": "grania-dean-studio-lantern-theatre-act",
-        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
-        "price_raw": "Standard: £14 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.0,
-          "Conc": 12.0
-        },
-        "performance_id": "636254"
-      }
-    ],
-    "lastmod": "2026-04-07T11:16:53+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/chief-petty-officer/",
     "slug": "chief-petty-officer",
     "title": "Chief Petty Officer",
@@ -26648,93 +26504,6 @@
     "lastmod": "2026-04-07T11:33:17+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/international-poetry-festival/",
-    "slug": "international-poetry-festival",
-    "title": "International Poetry Festival",
-    "description": "International Poetry Festival is a 3-day electrifying celebration of contemporary poetry at Brighton Fringe, organized by the Institute for Experimental Arts (Greece, UK, Tunisia, India, USA, Lebanon, Germany). This immersive event brings together cutting-edge poetic forms from across the world, blending language, visual arts and sound into a powerful live experience. The festival features video poetry screenings by internationally acclaimed artists, presenting striking visual narratives that create cinematic poems challenging how poetry is seen and felt. Vibrant spoken word performances showcase a dynamic mix of international voices alongside local Brighton poets, offering raw, intimate and politically charged work that reflects diverse cultures and perspectives. Poetry is fused with electronic music, stunning visuals, live soundscapes and digital experimentation. Venue: Presuming Ed-114-115 London Road- Brighton UK Dates: 27-28 & 31 May - starts at 22.15",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tInternational Poetry Festival is a 3-day electrifying celebration of contemporary poetry at Brighton Fringe, organized by the Institute for Experimental Arts (Greece, UK, Tunisia, India, USA, Lebanon, Germany). This immersive event brings together cutting-edge poetic forms from across the world, blending language, visual arts and sound into a powerful live experience. <br><br>The festival features video poetry screenings by internationally acclaimed artists, presenting striking visual narratives that create cinematic poems challenging how poetry is seen and felt. Vibrant spoken word performances showcase a dynamic mix of international voices alongside local Brighton poets, offering raw, intimate and politically charged work that reflects diverse cultures and perspectives.<br><br>Poetry is fused with electronic music, stunning visuals, live soundscapes and digital experimentation. Venue: Presuming Ed-114-115 London Road- Brighton UK Dates: 27-28 &amp; 31 May - starts at 22.15\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "International Poetry Festival by the Institute for Experimental Arts: 3 days LIVE Spoken Word performances & Video Poetry - Presuming Ed - Wed 27th 2026, Thu 28th 2026, Sun 31st 2026",
-    "og_description": "International Poetry Festival by the Institute for Experimental Arts: 3 days LIVE Spoken Word performances & Video Poetry - Presuming Ed - Wed 27th 2026, Thu 28th 2026, Sun 31st 2026",
-    "date_modified": "2026-04-07T11:33:21+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-08-2026-184147-1788.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-08-2026-221111-3090.jpg",
-      "https://d1vlmco8ur52ud.cloudfront.net/02-08-2026-221923-6566.jpg"
-    ],
-    "genre": "Literature & Spoken Word",
-    "duration": "60 mins",
-    "company": "The Institute for Experimental Arts (Website)",
-    "website": "https://theinstitute.info/",
-    "age_suitability": "18+ (Restriction)",
-    "age": {
-      "min_age": 18,
-      "type": "Restriction",
-      "raw": "18+ (Restriction)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [
-      "Strong Language",
-      "Loud Noises",
-      "References to Drug/Alcohol Misuse",
-      "References to Mental Illness",
-      "References to Sexual Abuse",
-      "Depictions and references to Violence"
-    ],
-    "socials": {
-      "facebook": "https://www.facebook.com/instituteart",
-      "instagram": "https://www.instagram.com/instituteartgreece"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-27",
-        "date_text": "May 27, 2026",
-        "time_text": "6:00 pm",
-        "venue_name": "Presuming Ed",
-        "venue_slug": "presuming-ed",
-        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
-        "price_raw": "Standard: £10 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0
-        },
-        "performance_id": "635017"
-      },
-      {
-        "date_iso": "2026-05-28",
-        "date_text": "May 28, 2026",
-        "time_text": "6:00 pm",
-        "venue_name": "Presuming Ed",
-        "venue_slug": "presuming-ed",
-        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
-        "price_raw": "Standard: £10 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0
-        },
-        "performance_id": "635018"
-      },
-      {
-        "date_iso": "2026-05-31",
-        "date_text": "May 31, 2026",
-        "time_text": "6:00 pm",
-        "venue_name": "Presuming Ed",
-        "venue_slug": "presuming-ed",
-        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
-        "price_raw": "Standard: £10 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0
-        },
-        "performance_id": "635019"
-      }
-    ],
-    "lastmod": "2026-04-07T11:33:21+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/invasion-jomarzeb/",
     "slug": "invasion-jomarzeb",
     "title": "INVASION (JoMarZeb)",
@@ -33774,106 +33543,6 @@
     "lastmod": "2026-04-07T11:40:57+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/mile-die-club/",
-    "slug": "mile-die-club",
-    "title": "Mile Die Club",
-    "description": "Your evening begins with a flight. As the Brighton i360 lifts you 450ft above the city, fizz flows, the view is breath-taking... and something is very wrong. You’ll descend into the i360 dining room for an indulgent three-course dinner, where the suspects mingle between the tables. Between courses, you’ll interrogate them, challenge their alibis, uncover clues and compare notes with your fellow guests. And before the final course is cleared, you’ll need to decide: who deserves to be exposed as a murderer? This is not theatre you watch. This is a crime you solve. What’s included: A premium three-course dinner An immersive, story-led murder mystery experience Exclusive ascent on the Brighton i360 Live interaction with a professional cast Fizz on arrival and wine with the meal A final reveal — and bragging rights if you get it right Perfect for thrill-seekers, special occasions, corporate entertaining, or anyone who believes dinner should come with a body count.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tYour evening begins with a flight. As the Brighton i360 lifts you 450ft above the city, fizz flows, the view is breath-taking... and something is very wrong.<br><br>You’ll descend into the i360 dining room for an indulgent three-course dinner, where the suspects mingle between the tables. Between courses, you’ll interrogate them, challenge their alibis, uncover clues and compare notes with your fellow guests.<br><br>And before the final course is cleared, you’ll need to decide: who deserves to be exposed as a murderer?<br><br>This is not theatre you watch.<br>This is a crime you solve.<br><br>What’s included:<br><br>A premium three-course dinner<br>An immersive, story-led murder mystery experience<br>Exclusive ascent on the Brighton i360<br>Live interaction with a professional cast<br>Fizz on arrival and wine with the meal<br>A final reveal — and bragging rights if you get it right<br>Perfect for thrill-seekers, special occasions, corporate entertaining, or anyone who believes dinner should come with a body count.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "A Murder Mystery Fine-Dining Experience on the Brighton i360. Includes 3 course dinner, wine and a mystery that needs solving! - The Pod - Brighton i360 - Fri 1st 2026, Sat 2nd 2026, Fri 15th 2026, Sat 16th 2026",
-    "og_description": "A Murder Mystery Fine-Dining Experience on the Brighton i360. Includes 3 course dinner, wine and a mystery that needs solving! - The Pod - Brighton i360 - Fri 1st 2026, Sat 2nd 2026, Fri 15th 2026, Sat 16th 2026",
-    "date_modified": "2026-04-07T11:41:01+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-09-2026-170225-9543.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-170516-9516.jpg",
-      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-170633-6818.jpg"
-    ],
-    "genre": "Cabaret & Variety",
-    "duration": "180 mins",
-    "company": "Pier Pressure (Website)",
-    "website": "http://www.pierpressure.co.uk/brighton",
-    "age_suitability": "18+ (Restriction)",
-    "age": {
-      "min_age": 18,
-      "type": "Restriction",
-      "raw": "18+ (Restriction)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [
-      "Audience Interaction",
-      "Strong Language",
-      "Depictions and references to Violence"
-    ],
-    "socials": {
-      "facebook": "https://www.facebook.com/pierpressurebrighton",
-      "tiktok": "https://www.tiktok.com/@pierpressurebtn",
-      "instagram": "https://www.instagram.com/pierpressurebtn"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-01",
-        "date_text": "May 1, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "The Pod - Brighton i360",
-        "venue_slug": "the-pod-brighton-i360",
-        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
-        "price_raw": "Standard: £109 paid",
-        "free": false,
-        "prices": {
-          "Standard": 109.0
-        },
-        "performance_id": "635362"
-      },
-      {
-        "date_iso": "2026-05-02",
-        "date_text": "May 2, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "The Pod - Brighton i360",
-        "venue_slug": "the-pod-brighton-i360",
-        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
-        "price_raw": "Standard: £109 paid",
-        "free": false,
-        "prices": {
-          "Standard": 109.0
-        },
-        "performance_id": "635363"
-      },
-      {
-        "date_iso": "2026-05-15",
-        "date_text": "May 15, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "The Pod - Brighton i360",
-        "venue_slug": "the-pod-brighton-i360",
-        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
-        "price_raw": "Standard: £109 paid",
-        "free": false,
-        "prices": {
-          "Standard": 109.0
-        },
-        "performance_id": "635364"
-      },
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "The Pod - Brighton i360",
-        "venue_slug": "the-pod-brighton-i360",
-        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
-        "price_raw": "Standard: £109 paid",
-        "free": false,
-        "prices": {
-          "Standard": 109.0
-        },
-        "performance_id": "635365"
-      }
-    ],
-    "lastmod": "2026-04-07T11:41:01+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/mindful-ki-aikido-taster-free-drop-in-taster-sessions/",
     "slug": "mindful-ki-aikido-taster-free-drop-in-taster-sessions",
     "title": "Mindful Ki & Aikido Taster Free Drop In Taster Sessions",
@@ -40035,92 +39704,6 @@
     "lastmod": "2026-04-07T11:48:02+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/racists-recessions-and-revolutions/",
-    "slug": "racists-recessions-and-revolutions",
-    "title": "Racists, Recessions And Revolutions",
-    "description": "\"Democracy isn't power to the people - it's power to the story. And why let the truth get in the way of a good story?\" Nadica has it all; a Balkan Mum from a country everyone seems to think shouldn't exist, a British dad who's never around and a post-uni life timed perfectly to be cancelled by Covid. What more could a girl ask for? Well a bit of cash wouldn't hurt. With the rest of her life in ruins, one Lockdown hustle beckons like a siren's call; lying online, for fun and for profit. Join Nadica as she masterminds some of the Internet's most viral headlines: Could Covid Be A Lie? Was The Election Stolen? And What Really Went Down In That Prison Cell... As her work takes her from the ideological fringes and into the halls of power, truth and lies blend and bash and the combined powers of Racists, Recessions and Revolutions roll together to destabilise the very fabric of society as we know it - no spoilers, but we all knew it would happen eventually right?",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\"Democracy isn't power to the people - it's power to the story. And why let the truth get in the way of a good story?\"<br><br>Nadica has it all; a Balkan Mum from a country everyone seems to think shouldn't exist, a British dad who's never around and a post-uni life timed perfectly to be cancelled by Covid. What more could a girl ask for?<br><br>Well a bit of cash wouldn't hurt. With the rest of her life in ruins, one Lockdown hustle beckons like a siren's call; lying online, for fun and for profit.<br><br>Join Nadica as she masterminds some of the Internet's most viral headlines: Could Covid Be A Lie? Was The Election Stolen? And What Really Went Down In That Prison Cell...<br><br>As her work takes her from the ideological fringes and into the halls of power, truth and lies blend and bash and the combined powers of Racists, Recessions and Revolutions roll together to destabilise the very fabric of society as we know it - no spoilers, but we all knew it would happen eventually right?\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "Lying; for fun and for profit. Join Nadica, a scrappy Slavic Brit, as she makes herself a packet through the magic of fake news! - Rotunda Theatre Brighton: Squeak - Fri 8th 2026, Sat 9th 2026, Sun 10th 2026",
-    "og_description": "Lying; for fun and for profit. Join Nadica, a scrappy Slavic Brit, as she makes herself a packet through the magic of fake news! - Rotunda Theatre Brighton: Squeak - Fri 8th 2026, Sat 9th 2026, Sun 10th 2026",
-    "date_modified": "2026-04-07T11:48:05+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/03-02-2026-123410-2112.jpg",
-    "gallery": [],
-    "genre": "Theatre",
-    "duration": "60 mins",
-    "company": "DBN Productuons (Website)",
-    "website": "https://www.instagram.com/racistsrecessionsrevolutions/",
-    "age_suitability": "12+ (Guideline)",
-    "age": {
-      "min_age": 12,
-      "type": "Guideline",
-      "raw": "12+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible"
-    ],
-    "content_warnings": [
-      "Audience Interaction",
-      "Strong Language",
-      "Contains Haze/Smoke Effects",
-      "Loud Noises",
-      "Depictions and references to Violence"
-    ],
-    "socials": {
-      "twitter": "https://www.twitter.com/RRRPlay2025",
-      "instagram": "https://www.instagram.com/racistsrecessionsrevolutions"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-08",
-        "date_text": "May 8, 2026",
-        "time_text": "6:45 pm",
-        "venue_name": "Rotunda Theatre Brighton: Squeak",
-        "venue_slug": "rotunda-theatre-brighton-squeak",
-        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "623759"
-      },
-      {
-        "date_iso": "2026-05-09",
-        "date_text": "May 9, 2026",
-        "time_text": "6:45 pm",
-        "venue_name": "Rotunda Theatre Brighton: Squeak",
-        "venue_slug": "rotunda-theatre-brighton-squeak",
-        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "623760"
-      },
-      {
-        "date_iso": "2026-05-10",
-        "date_text": "May 10, 2026",
-        "time_text": "6:45 pm",
-        "venue_name": "Rotunda Theatre Brighton: Squeak",
-        "venue_slug": "rotunda-theatre-brighton-squeak",
-        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "623761"
-      }
-    ],
-    "lastmod": "2026-04-07T11:48:05+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/ratmageddon/",
     "slug": "ratmageddon",
     "title": "RATMAGEDDON",
@@ -44595,121 +44178,6 @@
       }
     ],
     "lastmod": "2026-04-07T11:52:36+00:00"
-  },
-  {
-    "url": "https://www.brightonfringe.org/events/sherlock-holmes-vs-arsene-lupin/",
-    "slug": "sherlock-holmes-vs-arsene-lupin",
-    "title": "Sherlock Holmes vs Arsène Lupin: A Drag Crime Caper",
-    "description": "A new camp comedy pitting England’s most famous consulting detective against France’s most infamous gentleman burglar. Arsène Lupin voyages across the Channel to challenge Sherlock Holmes, with Dr John Watson caught in the middle of a tug-of-war between these literary legends. The Department of Ulterior Motives (DUM) specialises in high-concept, low-budget productions that blend physical performance and accessible storytelling with a mischievously political edge. Their debut production, an adaptation of The Man Who Was Thursday, was selected for SPRINT Festival 2026 at Camden People’s Theatre.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tA new camp comedy pitting England’s most famous consulting detective against France’s most infamous gentleman burglar.<br><br>Arsène Lupin voyages across the Channel to challenge Sherlock Holmes, with Dr John Watson caught in the middle of a tug-of-war between these literary legends.<br><br>The Department of Ulterior Motives (DUM) specialises in high-concept, low-budget productions that blend physical performance and accessible storytelling with a mischievously political edge. Their debut production, an adaptation of The Man Who Was Thursday, was selected for SPRINT Festival 2026 at Camden People’s Theatre.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "A new camp comedy pitting England’s famous consulting detective against France’s infamous gentleman burglar. - Brighton Open Air Theatre (BOAT),Ironworks Studios (Studio A) - Sat 16th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
-    "og_description": "A new camp comedy pitting England’s famous consulting detective against France’s infamous gentleman burglar. - Brighton Open Air Theatre (BOAT),Ironworks Studios (Studio A) - Sat 16th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
-    "date_modified": "2026-04-07T11:52:42+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/01-21-2026-184020-4582.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/01-21-2026-184039-9474.jpg"
-    ],
-    "genre": "Theatre",
-    "duration": "120 mins",
-    "company": "The Department of Ulterior Motives",
-    "website": null,
-    "age_suitability": "14+ (Guideline)",
-    "age": {
-      "min_age": 14,
-      "type": "Guideline",
-      "raw": "14+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet",
-      "Step-free Access"
-    ],
-    "content_warnings": [
-      "Loud Noises"
-    ],
-    "socials": {
-      "instagram": "https://www.instagram.com/dumtheatre"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "2:00 pm",
-        "venue_name": "Brighton Open Air Theatre (BOAT)",
-        "venue_slug": "brighton-open-air-theatre-boat",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-open-air-theatre-boat",
-        "price_raw": "Standard: £15 Conc: £14 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 14.0
-        },
-        "performance_id": "619835"
-      },
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "Brighton Open Air Theatre (BOAT)",
-        "venue_slug": "brighton-open-air-theatre-boat",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-open-air-theatre-boat",
-        "price_raw": "Standard: £15 Conc: £14 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 14.0
-        },
-        "performance_id": "619836"
-      },
-      {
-        "date_iso": "2026-05-19",
-        "date_text": "May 19, 2026",
-        "time_text": "7:30 pm",
-        "venue_name": "Ironworks Studios (Studio A)",
-        "venue_slug": "ironworks-studios-studio-a",
-        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
-        "price_raw": "Standard: £15 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 12.0
-        },
-        "performance_id": "619837"
-      },
-      {
-        "date_iso": "2026-05-20",
-        "date_text": "May 20, 2026",
-        "time_text": "7:30 pm",
-        "venue_name": "Ironworks Studios (Studio A)",
-        "venue_slug": "ironworks-studios-studio-a",
-        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
-        "price_raw": "Standard: £15 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 12.0
-        },
-        "performance_id": "619838"
-      },
-      {
-        "date_iso": "2026-05-21",
-        "date_text": "May 21, 2026",
-        "time_text": "7:30 pm",
-        "venue_name": "Ironworks Studios (Studio A)",
-        "venue_slug": "ironworks-studios-studio-a",
-        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
-        "price_raw": "Standard: £15 Conc: £12 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 12.0
-        },
-        "performance_id": "619839"
-      }
-    ],
-    "lastmod": "2026-04-07T11:52:42+00:00"
   },
   {
     "url": "https://www.brightonfringe.org/events/shine/",
@@ -49670,62 +49138,6 @@
     "lastmod": "2026-04-07T11:57:46+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/the-black-diamonds-presents-the-greatest-showgirl/",
-    "slug": "the-black-diamonds-presents-the-greatest-showgirl",
-    "title": "The Black Diamonds presents: The Greatest Showgirl",
-    "description": "Step right up and experience the captivating allure of The Greatest Showgirl ... a circus and carnival extravaganza! Immerse yourself in a mesmerizing blend of circus and carnival burlesque that will leave you on the edge of your seat. Get ready for a thrilling experience like no other, filled with heart-stopping dazzling performances, and non-stop entertainment. Join us for a night of wonder and excitement that will transport you to a world of magic and mystery. Don't miss out on this unforgettable adventure – get your tickets now and be a part of the show that everyone is talking about!",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tStep right up and experience the captivating allure of The Greatest Showgirl ... a circus and carnival extravaganza!<br><br>Immerse yourself in a mesmerizing blend of circus and carnival burlesque that will leave you on the edge of your seat. Get ready for a thrilling experience like no other, filled with heart-stopping dazzling performances, and non-stop entertainment. Join us for a night of wonder and excitement that will transport you to a world of magic and mystery. <br><br>Don't miss out on this unforgettable adventure – get your tickets now and be a part of the show that everyone is talking about!\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "Step right up and experience our captivating world, a unique blend of circus and carnival burlesque. - Ironworks Studios (Studio A) - Mon 25th 2026",
-    "og_description": "Step right up and experience our captivating world, a unique blend of circus and carnival burlesque. - Ironworks Studios (Studio A) - Mon 25th 2026",
-    "date_modified": "2026-04-07T11:57:49+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/12-02-2025-122251-4300.jpg",
-    "gallery": [],
-    "genre": "Cabaret & Variety",
-    "duration": "105 mins",
-    "company": "The Black Diamonds Dance",
-    "website": "www.theblackdiamondsuk.com",
-    "age_suitability": "18+ (Restriction)",
-    "age": {
-      "min_age": 18,
-      "type": "Restriction",
-      "raw": "18+ (Restriction)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [
-      "Audience Interaction",
-      "Nudity",
-      "Contains Haze/Smoke Effects"
-    ],
-    "socials": {
-      "facebook": "https://www.facebook.com/theblackdiamondsuk",
-      "tiktok": "https://www.tiktok.com/@theblackdiamondsuk",
-      "instagram": "https://www.instagram.com/theblackdiamondsuk"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-25",
-        "date_text": "May 25, 2026",
-        "time_text": "7:30 pm",
-        "venue_name": "Ironworks Studios (Studio A)",
-        "venue_slug": "ironworks-studios-studio-a",
-        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
-        "price_raw": "Standard: £15 Conc: £12.50 paid",
-        "free": false,
-        "prices": {
-          "Standard": 15.0,
-          "Conc": 12.5
-        },
-        "performance_id": "620588"
-      }
-    ],
-    "lastmod": "2026-04-07T11:57:49+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/the-blue-knot/",
     "slug": "the-blue-knot",
     "title": "The Blue Knot",
@@ -51857,94 +51269,6 @@
     "lastmod": "2026-04-07T11:59:50+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/the-full-gaffney/",
-    "slug": "the-full-gaffney",
-    "title": "The Full Gaffney",
-    "description": "Darren Gaffney's renowned show debuts in Brighton.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tDarren Gaffney's renowned show debuts in Brighton.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "The Full Gaffney - Darren Gaffney Live - Laughing Horse @ a&o Hostel bar (Front Room) - Sun 24th 2026, Mon 25th 2026, Tue 26th 2026",
-    "og_description": "The Full Gaffney - Darren Gaffney Live - Laughing Horse @ a&o Hostel bar (Front Room) - Sun 24th 2026, Mon 25th 2026, Tue 26th 2026",
-    "date_modified": "2026-04-07T11:59:53+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-10-2026-175318-9447.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-182417-5698.jpg"
-    ],
-    "genre": "Comedy",
-    "duration": "60 mins",
-    "company": "Laughing Horse (Website)",
-    "website": "https://www.instagram.com/thegaffcast",
-    "age_suitability": "18+ (Restriction)",
-    "age": {
-      "min_age": 18,
-      "type": "Restriction",
-      "raw": "18+ (Restriction)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [
-      "Audience Interaction",
-      "Strong Language"
-    ],
-    "socials": {
-      "facebook": "https://www.facebook.com/darren.gaffney",
-      "twitter": "https://www.twitter.com/The Gaff Cast",
-      "tiktok": "https://www.tiktok.com/@thegaffcast",
-      "instagram": "https://www.instagram.com/thegaffcast"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-24",
-        "date_text": "May 24, 2026",
-        "time_text": "9:30 pm",
-        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
-        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
-        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
-        "price_raw": "Standard: £14.99 Conc: £5 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.99,
-          "Conc": 5.0
-        },
-        "performance_id": "635971"
-      },
-      {
-        "date_iso": "2026-05-25",
-        "date_text": "May 25, 2026",
-        "time_text": "8:15 pm",
-        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
-        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
-        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
-        "price_raw": "Standard: £14.99 Conc: £5 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.99,
-          "Conc": 5.0
-        },
-        "performance_id": "635972"
-      },
-      {
-        "date_iso": "2026-05-26",
-        "date_text": "May 26, 2026",
-        "time_text": "8:15 pm",
-        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
-        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
-        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
-        "price_raw": "Standard: £14.99 Conc: £5 paid",
-        "free": false,
-        "prices": {
-          "Standard": 14.99,
-          "Conc": 5.0
-        },
-        "performance_id": "635973"
-      }
-    ],
-    "lastmod": "2026-04-07T11:59:53+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/the-giant-balloon-show/",
     "slug": "the-giant-balloon-show",
     "title": "The Giant Balloon Show",
@@ -53876,66 +53200,6 @@
       }
     ],
     "lastmod": "2026-04-07T12:01:33+00:00"
-  },
-  {
-    "url": "https://www.brightonfringe.org/events/the-queer-comedy-showcase/",
-    "slug": "the-queer-comedy-showcase",
-    "title": "The Queer Comedy Showcase",
-    "description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running and continues to spotlight an electric new wave of queer performers, performing alongside experienced performers. We expect the show to be in high demand, so don't dilly dally, book today.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tThe much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running and continues to spotlight an electric new wave of queer performers, performing alongside experienced performers.<br><br>We expect the show to be in high demand, so don't dilly dally, book today.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running. - Comedy at the Caxton - Sat 16th 2026, Sat 30th 2026",
-    "og_description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running. - Comedy at the Caxton - Sat 16th 2026, Sat 30th 2026",
-    "date_modified": "2026-04-07T12:01:39+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-11-2026-162051-5217.jpg",
-    "gallery": [],
-    "genre": "Comedy",
-    "duration": "60 mins",
-    "company": "The Queer Comedy Showcase",
-    "website": null,
-    "age_suitability": "18+ (Restriction)",
-    "age": {
-      "min_age": 18,
-      "type": "Restriction",
-      "raw": "18+ (Restriction)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [
-      "Assistance Dogs Welcome"
-    ],
-    "content_warnings": [
-      "Audience Interaction",
-      "Strong Language"
-    ],
-    "socials": {
-      "instagram": "https://www.instagram.com/alijaycomedy"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "8:30 pm",
-        "venue_name": "Comedy at the Caxton",
-        "venue_slug": "comedy-at-the-caxton",
-        "venue_url": "https://www.brightonfringe.org/venues/comedy-at-the-caxton",
-        "price_raw": "Standard: (PWYW) pwyw",
-        "free": false,
-        "prices": {},
-        "performance_id": "636362"
-      },
-      {
-        "date_iso": "2026-05-30",
-        "date_text": "May 30, 2026",
-        "time_text": "6:00 pm",
-        "venue_name": "Comedy at the Caxton",
-        "venue_slug": "comedy-at-the-caxton",
-        "venue_url": "https://www.brightonfringe.org/venues/comedy-at-the-caxton",
-        "price_raw": "Standard: (PWYW) pwyw",
-        "free": false,
-        "prices": {},
-        "performance_id": "636369"
-      }
-    ],
-    "lastmod": "2026-04-07T12:01:39+00:00"
   },
   {
     "url": "https://www.brightonfringe.org/events/the-quest-for-love-murder-and-revenge-in-space/",
@@ -59837,105 +59101,6 @@
     "lastmod": "2026-04-07T13:35:09+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/almost-fine/",
-    "slug": "almost-fine",
-    "title": "Almost Fine",
-    "description": "I’m fine... I think. A smile appears. A body follows—or tries to. Almost Fine is a solo contemporary dance created and performed by renowned Taiwanese dancer A-Yao (Peishao Huang). Small actions—walking, sitting, scrolling, breathing—begin to slip. Almost Fine is a physical exploration of those slips: the cracks in how we try to “be normal.” Playful, precise, and a little messy, the work moves through instinct, fragments of chaos, and childlike impulse. It becomes a game, a glitch, a quiet ritual of being. The piece explores identity—gender, culture, and nation—and how these forces shape the way we show up in the world and inhabit our own skin. It asks how our bodies are trained, coached, and gently pushed into roles we never consciously chose. It is not about breaking. It is not about control. It is about living in the space of \"almost\"— the fragile, honest, alive moment before we find our footing again.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tI’m fine... I think. A smile appears. A body follows—or tries to.<br><br>Almost Fine is a solo contemporary dance created and performed by renowned Taiwanese dancer A-Yao (Peishao Huang).<br><br>Small actions—walking, sitting, scrolling, breathing—begin to slip. Almost Fine is a physical exploration of those slips: the cracks in how we try to “be normal.” Playful, precise, and a little messy, the work moves through instinct, fragments of chaos, and childlike impulse. It becomes a game, a glitch, a quiet ritual of being.<br><br>The piece explores identity—gender, culture, and nation—and how these forces shape the way we show up in the world and inhabit our own skin. It asks how our bodies are trained, coached, and gently pushed into roles we never consciously chose.<br><br>It is not about breaking.<br>It is not about control.<br>It is about living in the space of \"almost\"—<br>the fragile, honest, alive moment before we find our footing again.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "I'm fine. I think. A SOLO DANCE by A-Yao from Taiwan: A body unravelling in ritual, gender and movement - Honest, Fragile, ALMOST. - Friends' Meeting House - Fri 8th 2026, Sat 9th 2026",
-    "og_description": "I'm fine. I think. A SOLO DANCE by A-Yao from Taiwan: A body unravelling in ritual, gender and movement - Honest, Fragile, ALMOST. - Friends' Meeting House - Fri 8th 2026, Sat 9th 2026",
-    "date_modified": null,
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-04-2026-130153-4599.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/04-04-2026-132143-3126.jpg",
-      "https://d1vlmco8ur52ud.cloudfront.net/04-04-2026-133513-3082.jpg"
-    ],
-    "genre": "Circus Dance & Physical Theatre",
-    "duration": "30 mins",
-    "company": "Come On Creative Studio (from TAIWAN) (Website)",
-    "website": "http://www.instagram.com/come.on_studio",
-    "age_suitability": "3+ (Guideline)",
-    "age": {
-      "min_age": 3,
-      "type": "Guideline",
-      "raw": "3+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet",
-      "Step-free Access"
-    ],
-    "content_warnings": [],
-    "socials": {
-      "instagram": "https://www.instagram.com/a_yao.peishaoh"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-08",
-        "date_text": "May 8, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "Friends' Meeting House",
-        "venue_slug": "friends-meeting-house",
-        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "657911"
-      },
-      {
-        "date_iso": "2026-05-08",
-        "date_text": "May 8, 2026",
-        "time_text": "8:30 pm",
-        "venue_name": "Friends' Meeting House",
-        "venue_slug": "friends-meeting-house",
-        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "657912"
-      },
-      {
-        "date_iso": "2026-05-09",
-        "date_text": "May 9, 2026",
-        "time_text": "7:00 pm",
-        "venue_name": "Friends' Meeting House",
-        "venue_slug": "friends-meeting-house",
-        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "658081"
-      },
-      {
-        "date_iso": "2026-05-09",
-        "date_text": "May 9, 2026",
-        "time_text": "8:30 pm",
-        "venue_name": "Friends' Meeting House",
-        "venue_slug": "friends-meeting-house",
-        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "658082"
-      }
-    ],
-    "lastmod": "2026-04-07T15:25:57+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/cameron-sinclair-harris-speak-now-or-forever-hold-your-peace-work-in-progress/",
     "slug": "cameron-sinclair-harris-speak-now-or-forever-hold-your-peace-work-in-progress",
     "title": "Cameron Sinclair Harris: Speak Now or Forever Hold Your Peace (Work In Progress)",
@@ -60171,410 +59336,6 @@
       }
     ],
     "lastmod": "2026-04-07T15:26:41+00:00"
-  },
-  {
-    "url": "https://www.brightonfringe.org/events/the-shape-of-things-undone/",
-    "slug": "the-shape-of-things-undone",
-    "title": "The Shape of Things Undone",
-    "description": "It's four in the morning. Christine — a carer, forty-something — is heating a sandwich in a microwave she has an understanding with. Upstairs, they're opening the new wing. Speeches. Free biscuits. Down here, she's doing the checklist. An audio performance about what gets lost when medicine looks ahead — and what stubbornly persists. On the eve of a genomics research launch at a care facility being quietly transformed: a mug with no name, a father who looked at Christine like the girl who delivers the prescriptions, and what it means to hold a story when science is looking at people who haven't arrived yet. Voices overlap, pause, return. Time loosens. Sit inside a story, not behind it. Tender, dark, unexpectedly funny. Written by Lita Doolan (multi award-winning playwright). ★★★★ WhatsOnStage Performed by Julie Broadbent (OffWest End nom). 'Whatever I forget or remember — I'll still know where this mug is.'",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tIt's four in the morning. Christine — a carer, forty-something — is heating a sandwich in a microwave she has an understanding with. Upstairs, they're opening the new wing. Speeches. Free biscuits. Down here, she's doing the checklist.<br><br>An audio performance about what gets lost when medicine looks ahead — and what stubbornly persists. On the eve of a genomics research launch at a care facility being quietly transformed: a mug with no name, a father who looked at Christine like the girl who delivers the prescriptions, and what it means to hold a story when science is looking at people who haven't arrived yet.<br><br>Voices overlap, pause, return. Time loosens. Sit inside a story, not behind it.<br><br>Tender, dark, unexpectedly funny. <br><br>Written by Lita Doolan (multi award-winning playwright). ★★★★ WhatsOnStage <br>Performed by Julie Broadbent (OffWest End nom). <br><br>'Whatever I forget or remember — I'll still know where this mug is.'\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "An audio performance about Alzheimer’s, where voices overlap and time loosens. Meaning emerges through listening, and care, - Brighton Fringe Streaming - Fri 1st 2026, Sat 2nd 2026, Sun 3rd 2026, Mon 4th 2026, Tue 5th 2026, Wed 6th 2026, Thu 7th 2026, Fri 8th 2026, Sat 9th 2026, Sun 10th 2026, Mon 11th 2026, Tue 12th 2026, Wed 13th 2026, Thu 14th 2026, Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026, Fri 22nd 2026, Sat 23rd 2026, Sun 24th 2026, Mon 25th 2026, Tue 26th 2026, Wed 27th 2026, Thu 28th 2026, Fri 29th 2026, Sat 30th 2026, Sun 31st 2026",
-    "og_description": "An audio performance about Alzheimer’s, where voices overlap and time loosens. Meaning emerges through listening, and care, - Brighton Fringe Streaming - Fri 1st 2026, Sat 2nd 2026, Sun 3rd 2026, Mon 4th 2026, Tue 5th 2026, Wed 6th 2026, Thu 7th 2026, Fri 8th 2026, Sat 9th 2026, Sun 10th 2026, Mon 11th 2026, Tue 12th 2026, Wed 13th 2026, Thu 14th 2026, Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026, Fri 22nd 2026, Sat 23rd 2026, Sun 24th 2026, Mon 25th 2026, Tue 26th 2026, Wed 27th 2026, Thu 28th 2026, Fri 29th 2026, Sat 30th 2026, Sun 31st 2026",
-    "date_modified": null,
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-06-2026-151025-9784.jpg",
-    "gallery": [],
-    "genre": "Theatre",
-    "duration": "35 mins",
-    "company": "Lita Doolan Production (Website)",
-    "website": "https://litadoolan.net/2025/12/11/staging-alzheimers-a-new-play-about-memory-care-and-what-we-leave-behind/",
-    "age_suitability": "16+ (Guideline)",
-    "age": {
-      "min_age": 16,
-      "type": "Guideline",
-      "raw": "16+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are not allowed at this event.",
-    "accessibility": [],
-    "content_warnings": [],
-    "socials": {
-      "twitter": "https://www.twitter.com/DoolanLita",
-      "instagram": "https://www.instagram.com/LitaDoolan"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-01",
-        "date_text": "May 1, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659852"
-      },
-      {
-        "date_iso": "2026-05-02",
-        "date_text": "May 2, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659874"
-      },
-      {
-        "date_iso": "2026-05-03",
-        "date_text": "May 3, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659867"
-      },
-      {
-        "date_iso": "2026-05-04",
-        "date_text": "May 4, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659868"
-      },
-      {
-        "date_iso": "2026-05-05",
-        "date_text": "May 5, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659869"
-      },
-      {
-        "date_iso": "2026-05-06",
-        "date_text": "May 6, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659870"
-      },
-      {
-        "date_iso": "2026-05-07",
-        "date_text": "May 7, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659871"
-      },
-      {
-        "date_iso": "2026-05-08",
-        "date_text": "May 8, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659872"
-      },
-      {
-        "date_iso": "2026-05-09",
-        "date_text": "May 9, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659873"
-      },
-      {
-        "date_iso": "2026-05-10",
-        "date_text": "May 10, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659866"
-      },
-      {
-        "date_iso": "2026-05-11",
-        "date_text": "May 11, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659863"
-      },
-      {
-        "date_iso": "2026-05-12",
-        "date_text": "May 12, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659862"
-      },
-      {
-        "date_iso": "2026-05-13",
-        "date_text": "May 13, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659859"
-      },
-      {
-        "date_iso": "2026-05-14",
-        "date_text": "May 14, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659858"
-      },
-      {
-        "date_iso": "2026-05-15",
-        "date_text": "May 15, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659855"
-      },
-      {
-        "date_iso": "2026-05-16",
-        "date_text": "May 16, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659854"
-      },
-      {
-        "date_iso": "2026-05-17",
-        "date_text": "May 17, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659865"
-      },
-      {
-        "date_iso": "2026-05-18",
-        "date_text": "May 18, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659864"
-      },
-      {
-        "date_iso": "2026-05-19",
-        "date_text": "May 19, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659861"
-      },
-      {
-        "date_iso": "2026-05-20",
-        "date_text": "May 20, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659860"
-      },
-      {
-        "date_iso": "2026-05-21",
-        "date_text": "May 21, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659857"
-      },
-      {
-        "date_iso": "2026-05-22",
-        "date_text": "May 22, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659856"
-      },
-      {
-        "date_iso": "2026-05-23",
-        "date_text": "May 23, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "659853"
-      },
-      {
-        "date_iso": "2026-05-24",
-        "date_text": "May 24, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630589"
-      },
-      {
-        "date_iso": "2026-05-25",
-        "date_text": "May 25, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630590"
-      },
-      {
-        "date_iso": "2026-05-26",
-        "date_text": "May 26, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630591"
-      },
-      {
-        "date_iso": "2026-05-27",
-        "date_text": "May 27, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630592"
-      },
-      {
-        "date_iso": "2026-05-28",
-        "date_text": "May 28, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630593"
-      },
-      {
-        "date_iso": "2026-05-29",
-        "date_text": "May 29, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630594"
-      },
-      {
-        "date_iso": "2026-05-30",
-        "date_text": "May 30, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630595"
-      },
-      {
-        "date_iso": "2026-05-31",
-        "date_text": "May 31, 2026",
-        "time_text": "12:00 am",
-        "venue_name": "Brighton Fringe Streaming",
-        "venue_slug": "brighton-fringe-streaming",
-        "venue_url": "https://www.brightonfringe.org/venues/brighton-fringe-streaming",
-        "price_raw": "Standard: FREE free",
-        "free": true,
-        "prices": {},
-        "performance_id": "630588"
-      }
-    ],
-    "lastmod": "2026-04-07T15:27:33+00:00"
   },
   {
     "url": "https://www.brightonfringe.org/events/tim-reeves-an-hour-of-accessible-material-to-further-my-career/",
@@ -65875,81 +64636,6 @@
     "lastmod": "2026-04-20T15:47:13+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/bound-by-the-wind-echoes-of-the-past/",
-    "slug": "bound-by-the-wind-echoes-of-the-past",
-    "title": "Bound by the Wind: Echoes of the Past",
-    "description": "What really happened on the day Mulan laid down her sword? Bound by the Wind: The Echoes of the Past returns to the legendary warrior at the moment history skips over — the night the war ends, when victory no longer gives answers. As Mulan confronts a captured enemy and the loyalty of those closest to her, the play narrows its focus to a single turning point: a decision that will cost lives, break faith, and redefine what heroism truly demands. This new version strips back the epic scale of previous productions to explore the human cost behind the myth — not the battles fought, but the choice to stop fighting. Blending stylised stage combat, physical storytelling, and an immersive soundscape, Bound by the Wind offers an intimate reimagining of a legendary figure caught between duty, identity, and freedom. Created by a multicultural team of emerging artists, the production invites audiences to witness the woman behind the war god — and the moment she chooses to leave.",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tWhat really happened on the day Mulan laid down her sword?<br><br>Bound by the Wind: The Echoes of the Past returns to the legendary warrior at the moment history skips over — the night the war ends, when victory no longer gives answers.<br><br>As Mulan confronts a captured enemy and the loyalty of those closest to her, the play narrows its focus to a single turning point: a decision that will cost lives, break faith, and redefine what heroism truly demands.<br><br>This new version strips back the epic scale of previous productions to explore the human cost behind the myth — not the battles fought, but the choice to stop fighting.<br><br>Blending stylised stage combat, physical storytelling, and an immersive soundscape, Bound by the Wind offers an intimate reimagining of a legendary figure caught between duty, identity, and freedom.<br><br>Created by a multicultural team of emerging artists, the production invites audiences to witness the woman behind the war god — and the moment she chooses to leave.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "The war is over. The legend remains. Bound by the Wind reveals what happened on the night Mulan chose to leave. ★★★½ - Rotunda Theatre Brighton: Bubble - Sun 24th 2026, Mon 25th 2026",
-    "og_description": "The war is over. The legend remains. Bound by the Wind reveals what happened on the night Mulan chose to leave. ★★★½ - Rotunda Theatre Brighton: Bubble - Sun 24th 2026, Mon 25th 2026",
-    "date_modified": "2026-04-20T15:55:47+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-09-2026-163736-9740.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-163838-4706.jpg",
-      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-163955-1945.jpg"
-    ],
-    "genre": "Theatre",
-    "duration": "60 mins",
-    "company": "The Whisper Current Productions",
-    "website": null,
-    "age_suitability": "12+ (Guideline)",
-    "age": {
-      "min_age": 12,
-      "type": "Guideline",
-      "raw": "12+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [
-      "Strong Language",
-      "Contains Haze/Smoke Effects",
-      "Strobe Lights in Use",
-      "Loud Noises",
-      "Depictions and references to Violence"
-    ],
-    "socials": {
-      "facebook": "https://www.facebook.com/profile.php?id=61582504802703",
-      "instagram": "https://www.instagram.com/the_whisper_current/"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-24",
-        "date_text": "May 24, 2026",
-        "time_text": "2:00 pm",
-        "venue_name": "Rotunda Theatre Brighton: Bubble",
-        "venue_slug": "rotunda-theatre-brighton-bubble",
-        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-bubble",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "634977"
-      },
-      {
-        "date_iso": "2026-05-25",
-        "date_text": "May 25, 2026",
-        "time_text": "5:00 pm",
-        "venue_name": "Rotunda Theatre Brighton: Bubble",
-        "venue_slug": "rotunda-theatre-brighton-bubble",
-        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-bubble",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "634978"
-      }
-    ],
-    "lastmod": "2026-04-20T15:55:47+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/police-cops-the-original/",
     "slug": "police-cops-the-original",
     "title": "Police Cops: The Original",
@@ -70482,60 +69168,6 @@
     "lastmod": "2026-04-21T15:33:45+00:00"
   },
   {
-    "url": "https://www.brightonfringe.org/events/tiny-dancers-family-rave/",
-    "slug": "tiny-dancers-family-rave",
-    "title": "Tiny Dancers Family Rave",
-    "description": "Get ready for the ultimate daytime party where grown-ups and kids dance together to the best dance music ever made! Tiny Dancers Family Rave is the award-winning event that has been selling out legendary London venues for over five years. We are thrilled to bring our high-energy and infectious spirit to Caravanserai for Brighton Fringe. Join our resident DJ JOY ALARM for a journey through nostalgic hits that travel through all eras of dance music. Having graced the stage at many major UK festivals including Glastonbury, Boomtown and Isle of Wight, JOY ALARM breathes new life into the tunes you raved to back when sleepless nights meant \"bottled beer\" rather than \"bottle feed\". Expect a sensory wonderland for all ages: • Live DJs and MCing • Bubbles, Confetti Cannons, and Balloons • Creative Crafts and Face Painting • Huge audience participation moments Relive your clubbing days and introduce the next generation to the culture we love. It’s big tunes for parents and big fun for kids!",
-    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tGet ready for the ultimate daytime party where grown-ups and kids dance together to the best dance music ever made!<br><br>Tiny Dancers Family Rave is the award-winning event that has been selling out legendary London venues for over five years. We are thrilled to bring our high-energy and infectious spirit to Caravanserai for Brighton Fringe.<br><br>Join our resident DJ JOY ALARM for a journey through nostalgic hits that travel through all eras of dance music. Having graced the stage at many major UK festivals including Glastonbury, Boomtown and Isle of Wight, JOY ALARM breathes new life into the tunes you raved to back when sleepless nights meant \"bottled beer\" rather than \"bottle feed\".<br><br>Expect a sensory wonderland for all ages:<br>• Live DJs and MCing<br>• Bubbles, Confetti Cannons, and Balloons<br>• Creative Crafts and Face Painting<br>• Huge audience participation moments<br><br>Relive your clubbing days and introduce the next generation to the culture we love. It’s big tunes for parents and big fun for kids!\t\t\t\t\t\t\n\t\t\t\t\t</div>",
-    "meta_description": "Award-winning family rave! DJs, crafts, face paint, bubbles, confetti cannons. Big tunes for parents, big fun for kids. ★★★★★ - Klub Kaput at Caravanserai - Sat 30th 2026",
-    "og_description": "Award-winning family rave! DJs, crafts, face paint, bubbles, confetti cannons. Big tunes for parents, big fun for kids. ★★★★★ - Klub Kaput at Caravanserai - Sat 30th 2026",
-    "date_modified": "2026-04-21T15:33:52+00:00",
-    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-10-2026-232606-4342.jpg",
-    "gallery": [
-      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-232937-2508.jpg",
-      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-233203-2078.jpg"
-    ],
-    "genre": "Children & Young People",
-    "duration": "120 mins",
-    "company": "Tiny Dancers Family Rave (Website)",
-    "website": "https://www.tinydancersevents.com/",
-    "age_suitability": "0+ (Guideline)",
-    "age": {
-      "min_age": 0,
-      "type": "Guideline",
-      "raw": "0+ (Guideline)"
-    },
-    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
-    "accessibility": [
-      "Assistance Dogs Welcome",
-      "Wheelchair Accessible",
-      "Accessible Toilet"
-    ],
-    "content_warnings": [],
-    "socials": {
-      "facebook": "https://www.facebook.com/tinydancersfamilyrave",
-      "instagram": "https://www.instagram.com/tinydancersevents"
-    },
-    "performances": [
-      {
-        "date_iso": "2026-05-30",
-        "date_text": "May 30, 2026",
-        "time_text": "12:30 pm",
-        "venue_name": "Klub Kaput at Caravanserai",
-        "venue_slug": "klub-kaput-at-caravanserai",
-        "venue_url": "https://www.brightonfringe.org/venues/klub-kaput-at-caravanserai",
-        "price_raw": "Standard: £10 Conc: £8 paid",
-        "free": false,
-        "prices": {
-          "Standard": 10.0,
-          "Conc": 8.0
-        },
-        "performance_id": "636025"
-      }
-    ],
-    "lastmod": "2026-04-21T15:33:52+00:00"
-  },
-  {
     "url": "https://www.brightonfringe.org/events/caroline-mcevoy-ragin-work-in-progress/",
     "slug": "caroline-mcevoy-ragin-work-in-progress",
     "title": "Caroline McEvoy: RAGIN’ (WORK IN PROGRESS)",
@@ -70792,5 +69424,1286 @@
       }
     ],
     "lastmod": "2026-04-21T15:34:15+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/racists-recessions-and-revolutions/",
+    "slug": "racists-recessions-and-revolutions",
+    "title": "Racists, Recessions And Revolutions (Work In Progress)",
+    "description": "\"Democracy isn't power to the people - it's power to the story. And why let the truth get in the way of a good story?\" Nadica has it all; a Balkan Mum from a country everyone seems to think shouldn't exist, a British dad who's never around and a post-uni life timed perfectly to be cancelled by Covid. What more could a girl ask for? Well a bit of cash wouldn't hurt. With the rest of her life in ruins, one Lockdown hustle beckons like a siren's call; lying online, for fun and for profit. Join Nadica as she masterminds some of the Internet's most viral headlines: Could Covid Be A Lie? Was The Election Stolen? And What Really Went Down In That Prison Cell... As her work takes her from the ideological fringes and into the halls of power, truth and lies blend and bash and the combined powers of Racists, Recessions and Revolutions roll together to destabilise the very fabric of society as we know it - no spoilers, but we all knew it would happen eventually right?",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\"Democracy isn't power to the people - it's power to the story. And why let the truth get in the way of a good story?\"<br><br>Nadica has it all; a Balkan Mum from a country everyone seems to think shouldn't exist, a British dad who's never around and a post-uni life timed perfectly to be cancelled by Covid. What more could a girl ask for?<br><br>Well a bit of cash wouldn't hurt. With the rest of her life in ruins, one Lockdown hustle beckons like a siren's call; lying online, for fun and for profit.<br><br>Join Nadica as she masterminds some of the Internet's most viral headlines: Could Covid Be A Lie? Was The Election Stolen? And What Really Went Down In That Prison Cell...<br><br>As her work takes her from the ideological fringes and into the halls of power, truth and lies blend and bash and the combined powers of Racists, Recessions and Revolutions roll together to destabilise the very fabric of society as we know it - no spoilers, but we all knew it would happen eventually right?\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Lying; for fun and for profit. Join Nadica, a scrappy Slavic Brit, as she makes herself a packet through the magic of fake news! - Rotunda Theatre Brighton: Squeak - Fri 8th 2026, Sat 9th 2026, Sun 10th 2026",
+    "og_description": "Lying; for fun and for profit. Join Nadica, a scrappy Slavic Brit, as she makes herself a packet through the magic of fake news! - Rotunda Theatre Brighton: Squeak - Fri 8th 2026, Sat 9th 2026, Sun 10th 2026",
+    "date_modified": "2026-04-22T12:40:09+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/03-02-2026-123410-2112.jpg",
+    "gallery": [],
+    "genre": "Theatre",
+    "duration": "60 mins",
+    "company": "DBN Productuons (Website)",
+    "website": "https://www.instagram.com/racistsrecessionsrevolutions/",
+    "age_suitability": "12+ (Guideline)",
+    "age": {
+      "min_age": 12,
+      "type": "Guideline",
+      "raw": "12+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Strong Language",
+      "Contains Haze/Smoke Effects",
+      "Loud Noises",
+      "Depictions and references to Violence"
+    ],
+    "socials": {
+      "twitter": "https://www.twitter.com/RRRPlay2025",
+      "instagram": "https://www.instagram.com/racistsrecessionsrevolutions"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-08",
+        "date_text": "May 8, 2026",
+        "time_text": "6:45 pm",
+        "venue_name": "Rotunda Theatre Brighton: Squeak",
+        "venue_slug": "rotunda-theatre-brighton-squeak",
+        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "623759"
+      },
+      {
+        "date_iso": "2026-05-09",
+        "date_text": "May 9, 2026",
+        "time_text": "6:45 pm",
+        "venue_name": "Rotunda Theatre Brighton: Squeak",
+        "venue_slug": "rotunda-theatre-brighton-squeak",
+        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "623760"
+      },
+      {
+        "date_iso": "2026-05-10",
+        "date_text": "May 10, 2026",
+        "time_text": "6:45 pm",
+        "venue_name": "Rotunda Theatre Brighton: Squeak",
+        "venue_slug": "rotunda-theatre-brighton-squeak",
+        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-squeak",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "623761"
+      }
+    ],
+    "lastmod": "2026-04-22T12:40:09+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/little-lord-fondleroy/",
+    "slug": "little-lord-fondleroy",
+    "title": "Little Lord Fondleroy",
+    "description": "Little Lord Fondleroy is a saccharine nightmare in velvet and lace, whose cherubic curls and perfect manners provide foolproof cover for his constant yearnings - primarily for poetry, pleasure, head boys and complete theatrical chaos.In this riotous hour, whirl through a formative annus eroticus at Flippitts Darstardly Boarding School for Badly Behaved Boys, where forbidden desires flourish amidst a sadistic culture of cruelty cultivated by prefects and masters alike. Here, Fondleroy discovers that masculinity and Empire are stitched together by caning, cunning and carefully repressed desire. Can he retain his innocent charm and boyish over-generosity while the forces around him attempt to stamp all that soppy, frilly, froppy feeling out of him? Enter a world of boarding-school heartbreak, homoerotic hijinks, and imperial intrigue.Fusing drag, theatre and music, this hilariously subversive show rips open hidden histories to reveal the queer desires that have always been lurking beneath",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tLittle Lord Fondleroy is a saccharine nightmare in velvet and lace, whose cherubic curls and perfect manners provide foolproof cover for his constant yearnings - primarily for poetry, pleasure, head boys and complete theatrical chaos.In this riotous hour, whirl through a formative annus eroticus at Flippitts Darstardly Boarding School for Badly Behaved Boys, where forbidden desires flourish amidst a sadistic culture of cruelty cultivated by prefects and masters alike. Here, Fondleroy discovers that masculinity and Empire are stitched together by caning, cunning and carefully repressed desire.<br>Can he retain his innocent charm and boyish over-generosity while the forces around him attempt to stamp all that soppy, frilly, froppy feeling out of him?<br>Enter a world of boarding-school heartbreak, homoerotic hijinks, and imperial intrigue.Fusing drag, theatre and music, this hilariously subversive show rips open hidden histories to reveal the queer desires that have always been lurking beneath\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Little Lord Fondleroy: a velvet-clad innocent unravels at a brutal boarding school—drag, music & queer desire laid bare. - The Lantern @ ACT - Tue 19th 2026",
+    "og_description": "Little Lord Fondleroy: a velvet-clad innocent unravels at a brutal boarding school—drag, music & queer desire laid bare. - The Lantern @ ACT - Tue 19th 2026",
+    "date_modified": null,
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-13-2026-141602-7535.jpg",
+    "gallery": [],
+    "genre": "Comedy",
+    "duration": "60 mins",
+    "company": "Jordana Belaiche",
+    "website": null,
+    "age_suitability": "16+ (Guideline)",
+    "age": {
+      "min_age": 16,
+      "type": "Guideline",
+      "raw": "16+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome"
+    ],
+    "content_warnings": [
+      "Strong Language",
+      "Nudity",
+      "References to Sexual Abuse",
+      "Depictions and references to Violence"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/blueeyedhag"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-19",
+        "date_text": "May 19, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "The Lantern @ ACT",
+        "venue_slug": "the-lantern-act",
+        "venue_url": "https://www.brightonfringe.org/venues/the-lantern-act",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "658571"
+      }
+    ],
+    "lastmod": "2026-04-22T13:13:07+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/rabbie-burns-bottom-drawers/",
+    "slug": "rabbie-burns-bottom-drawers",
+    "title": "Rabbie Burns' Bottom Drawers",
+    "description": "Rabbie Burns' Bottom Drawers A musical comedy in one act. A riotous musical comedy uncovering the scandalous side of Robert Burns. What happens when Scotland’s national bard’s naughtiest works are dragged out into the open? Set in 1796, just after Burns’ death, his unsuspecting housekeeper stumbles upon a hidden stash of very explicit poetry and lyrics. Naturally the local literary society decides there’s only one thing to do... put on a public reading! You, the audience, become the 18th-century townsfolk, invited to enjoy Burn's shocking and hilarious poetry like 'The Fornicator' alongside some surprisingly beautiful songs like 'My Love is Like a Red, Red Rose. Performed by Christine Weir and Cameron Robertson and directed by Clare Stopford, this raucous two-hander gleefully mixes period drama with modern musical flair — featuring keyboard and saxophone in defiance of historical accuracy.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tRabbie Burns' Bottom Drawers<br>A musical comedy in one act.<br><br>A riotous musical comedy uncovering the scandalous side of Robert Burns.<br><br>What happens when Scotland’s national bard’s naughtiest works are dragged out into the open?<br><br>Set in 1796, just after Burns’ death, his unsuspecting housekeeper stumbles upon a hidden stash of very explicit poetry and lyrics. Naturally the local literary society decides there’s only one thing to do... put on a public reading!<br><br>You, the audience, become the 18th-century townsfolk, invited to enjoy Burn's shocking and hilarious poetry like 'The Fornicator' alongside some surprisingly beautiful songs like 'My Love is Like a Red, Red Rose.<br><br>Performed by Christine Weir and Cameron Robertson and directed by Clare Stopford, this raucous two-hander gleefully mixes period drama with modern musical flair — featuring keyboard and saxophone in defiance of historical accuracy.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Uncovering the scandalous works of Robert Burns, a riotous 50-min musical comedy. - Laughing Horse @ The Walrus (Tusk Club) - Sun 10th 2026, Mon 25th 2026, Sun 31st 2026",
+    "og_description": "Uncovering the scandalous works of Robert Burns, a riotous 50-min musical comedy. - Laughing Horse @ The Walrus (Tusk Club) - Sun 10th 2026, Mon 25th 2026, Sun 31st 2026",
+    "date_modified": null,
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/11-09-2025-112113-1548.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/04-20-2026-102918-9172.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/04-20-2026-102930-4259.jpg"
+    ],
+    "genre": "Theatre",
+    "duration": "60 mins",
+    "company": "Christine Weir",
+    "website": null,
+    "age_suitability": "18+ (Restriction)",
+    "age": {
+      "min_age": 18,
+      "type": "Restriction",
+      "raw": "18+ (Restriction)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Strong Language"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/tradcelt/",
+      "instagram": "https://www.instagram.com/christhecelt"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-10",
+        "date_text": "May 10, 2026",
+        "time_text": "2:45 pm",
+        "venue_name": "Laughing Horse @ The Walrus (Tusk Club)",
+        "venue_slug": "laughing-horse-the-walrus-tusk-club",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-the-walrus-tusk-club",
+        "price_raw": "Standard: £12.50 Conc: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 12.5,
+          "Conc": 10.0
+        },
+        "performance_id": "664432"
+      },
+      {
+        "date_iso": "2026-05-25",
+        "date_text": "May 25, 2026",
+        "time_text": "12:15 pm",
+        "venue_name": "Laughing Horse @ The Walrus (Tusk Club)",
+        "venue_slug": "laughing-horse-the-walrus-tusk-club",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-the-walrus-tusk-club",
+        "price_raw": "Standard: £12.50 Conc: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 12.5,
+          "Conc": 10.0
+        },
+        "performance_id": "664433"
+      },
+      {
+        "date_iso": "2026-05-31",
+        "date_text": "May 31, 2026",
+        "time_text": "1:30 pm",
+        "venue_name": "Laughing Horse @ The Walrus (Tusk Club)",
+        "venue_slug": "laughing-horse-the-walrus-tusk-club",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-the-walrus-tusk-club",
+        "price_raw": "Standard: £12.50 Conc: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 12.5,
+          "Conc": 10.0
+        },
+        "performance_id": "664434"
+      }
+    ],
+    "lastmod": "2026-04-22T13:13:18+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/jack-harris-teaching-teachers-2-work-in-progress/",
+    "slug": "jack-harris-teaching-teachers-2-work-in-progress",
+    "title": "Jack Harris: Teaching Teachers 2 (Work In Progress)",
+    "description": "Teacher-by-trade Jack returns to recruit more people into the classroom. Bigger. Bolder. Teacherer. In this multimedia comedy show, the one man solution to the education crisis is back to test material like a Year 9 class tests a substitute teacher – vigorously. Writer for BBC One’s Have I Got News For You.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tTeacher-by-trade Jack returns to recruit more people into the classroom. Bigger. Bolder. Teacherer.<br><br>In this multimedia comedy show, the one man solution to the education crisis is back to test material like a Year 9 class tests a substitute teacher – vigorously.<br><br>Writer for BBC One’s Have I Got News For You.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Teacher-by-trade Jack returns to recruit more people into the classroom. Bigger. Bolder. Teacherer. ★★★★★ Metro ★★★★ Telegraph - Presuming Ed - Sun 3rd 2026, Mon 4th 2026",
+    "og_description": "Teacher-by-trade Jack returns to recruit more people into the classroom. Bigger. Bolder. Teacherer. ★★★★★ Metro ★★★★ Telegraph - Presuming Ed - Sun 3rd 2026, Mon 4th 2026",
+    "date_modified": null,
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-22-2026-111433-5537.jpg",
+    "gallery": [],
+    "genre": "Comedy",
+    "duration": "45 mins",
+    "company": "Jack Harris (Website)",
+    "website": "https://www.jackjharris.co.uk/",
+    "age_suitability": "14+ (Guideline)",
+    "age": {
+      "min_age": 14,
+      "type": "Guideline",
+      "raw": "14+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [],
+    "socials": {
+      "instagram": "https://www.instagram.com/jackjharris"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-03",
+        "date_text": "May 3, 2026",
+        "time_text": "2:45 pm",
+        "venue_name": "Presuming Ed",
+        "venue_slug": "presuming-ed",
+        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
+        "price_raw": "Standard: £6 (PWYW) pwyw",
+        "free": false,
+        "prices": {
+          "Standard": 6.0
+        },
+        "performance_id": "664726"
+      },
+      {
+        "date_iso": "2026-05-04",
+        "date_text": "May 4, 2026",
+        "time_text": "2:45 pm",
+        "venue_name": "Presuming Ed",
+        "venue_slug": "presuming-ed",
+        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
+        "price_raw": "Standard: £6 (PWYW) pwyw",
+        "free": false,
+        "prices": {
+          "Standard": 6.0
+        },
+        "performance_id": "664727"
+      }
+    ],
+    "lastmod": "2026-04-22T13:14:02+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/counterattack-youth/",
+    "slug": "counterattack-youth",
+    "title": "Counterattack : Youth",
+    "description": "A wedding to celebrate. Four friends in a pub. One evening that goes exactly as planned. Or so we thought. The evening completely off the rails. Counterattack: Youth is a 70-minute pub drama set entirely in a real pub, with the audience seated as fellow patrons at the next table. No stage. No distance. Just four women in their late twenties, a round of drinks, and every conversation they've been putting off. It is a little bit of everything: a celebration, an argument, a prank, a toast, and even a reminiscence about school days. But most importantly, it is one very honest conversation about what it actually means to be young right now.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tA wedding to celebrate. Four friends in a pub. One evening that goes exactly as planned. Or so we thought. The evening completely off the rails. Counterattack: Youth is a 70-minute pub drama set entirely in a real pub, with the audience seated as fellow patrons at the next table. No stage. No distance. Just four women in their late twenties, a round of drinks, and every conversation they've been putting off.<br><br>It is a little bit of everything: a celebration, an argument, a prank, a toast, and even a reminiscence about school days. But most importantly, it is one very honest conversation about what it actually means to be young right now.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Rent, love, jobs, marriage, and youth. Four women in a pub sort out their twenties. - Cellar Bar @ The Brunswick - Fri 22nd 2026, Sat 23rd 2026",
+    "og_description": "Rent, love, jobs, marriage, and youth. Four women in a pub sort out their twenties. - Cellar Bar @ The Brunswick - Fri 22nd 2026, Sat 23rd 2026",
+    "date_modified": null,
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-21-2026-111451-9581.jpg",
+    "gallery": [],
+    "genre": "Theatre",
+    "duration": "70 mins",
+    "company": "Logue Studio",
+    "website": null,
+    "age_suitability": "16+ (Guideline)",
+    "age": {
+      "min_age": 16,
+      "type": "Guideline",
+      "raw": "16+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Audience Interaction"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/loguestudio_official"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-22",
+        "date_text": "May 22, 2026",
+        "time_text": "12:30 pm",
+        "venue_name": "Cellar Bar @ The Brunswick",
+        "venue_slug": "cellar-bar-the-brunswick",
+        "venue_url": "https://www.brightonfringe.org/venues/cellar-bar-the-brunswick",
+        "price_raw": "Standard: £7 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 7.0,
+          "Conc": 5.0
+        },
+        "performance_id": "664631"
+      },
+      {
+        "date_iso": "2026-05-22",
+        "date_text": "May 22, 2026",
+        "time_text": "3:30 pm",
+        "venue_name": "Cellar Bar @ The Brunswick",
+        "venue_slug": "cellar-bar-the-brunswick",
+        "venue_url": "https://www.brightonfringe.org/venues/cellar-bar-the-brunswick",
+        "price_raw": "Standard: £7 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 7.0,
+          "Conc": 5.0
+        },
+        "performance_id": "664634"
+      },
+      {
+        "date_iso": "2026-05-23",
+        "date_text": "May 23, 2026",
+        "time_text": "12:30 pm",
+        "venue_name": "Cellar Bar @ The Brunswick",
+        "venue_slug": "cellar-bar-the-brunswick",
+        "venue_url": "https://www.brightonfringe.org/venues/cellar-bar-the-brunswick",
+        "price_raw": "Standard: £7 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 7.0,
+          "Conc": 5.0
+        },
+        "performance_id": "664632"
+      }
+    ],
+    "lastmod": "2026-04-22T13:14:12+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/tiny-dancers-family-rave/",
+    "slug": "tiny-dancers-family-rave",
+    "title": "Tiny Dancers Family Rave",
+    "description": "Get ready for the ultimate daytime party where grown-ups and kids dance together to the best dance music ever made! Tiny Dancers Family Rave is the award-winning event that has been selling out legendary London venues for over five years. We are thrilled to bring our high-energy and infectious spirit to Caravanserai for Brighton Fringe. Join our resident DJ JOY ALARM for a journey through nostalgic hits that travel through all eras of dance music. Having graced the stage at many major UK festivals including Glastonbury, Boomtown and Isle of Wight, JOY ALARM breathes new life into the tunes you raved to back when sleepless nights meant \"bottled beer\" rather than \"bottle feed\". Expect a sensory wonderland for all ages: • Live DJs and MCing • Bubbles, Confetti Cannons, and Balloons • Creative Crafts and Face Painting • Huge audience participation moments Relive your clubbing days and introduce the next generation to the culture we love. It’s big tunes for parents and big fun for kids!",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tGet ready for the ultimate daytime party where grown-ups and kids dance together to the best dance music ever made!<br><br>Tiny Dancers Family Rave is the award-winning event that has been selling out legendary London venues for over five years. We are thrilled to bring our high-energy and infectious spirit to Caravanserai for Brighton Fringe.<br><br>Join our resident DJ JOY ALARM for a journey through nostalgic hits that travel through all eras of dance music. Having graced the stage at many major UK festivals including Glastonbury, Boomtown and Isle of Wight, JOY ALARM breathes new life into the tunes you raved to back when sleepless nights meant \"bottled beer\" rather than \"bottle feed\".<br><br>Expect a sensory wonderland for all ages:<br>• Live DJs and MCing<br>• Bubbles, Confetti Cannons, and Balloons<br>• Creative Crafts and Face Painting<br>• Huge audience participation moments<br><br>Relive your clubbing days and introduce the next generation to the culture we love. It’s big tunes for parents and big fun for kids!\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Award-winning family rave! DJs, crafts, face paint, bubbles, confetti cannons. Big tunes for parents, big fun for kids. ★★★★★ - Klub Kaput at Caravanserai - Sat 30th 2026",
+    "og_description": "Award-winning family rave! DJs, crafts, face paint, bubbles, confetti cannons. Big tunes for parents, big fun for kids. ★★★★★ - Klub Kaput at Caravanserai - Sat 30th 2026",
+    "date_modified": "2026-04-22T13:43:22+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-10-2026-232606-4342.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-232937-2508.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-233203-2078.jpg"
+    ],
+    "genre": "Children & Young People",
+    "duration": "120 mins",
+    "company": "Tiny Dancers Family Rave (Website)",
+    "website": "https://www.tinydancersevents.com/",
+    "age_suitability": "0+ (Guideline)",
+    "age": {
+      "min_age": 0,
+      "type": "Guideline",
+      "raw": "0+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [],
+    "socials": {
+      "facebook": "https://www.facebook.com/tinydancersfamilyrave",
+      "instagram": "https://www.instagram.com/tinydancersevents"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-30",
+        "date_text": "May 30, 2026",
+        "time_text": "12:30 pm",
+        "venue_name": "Klub Kaput at Caravanserai",
+        "venue_slug": "klub-kaput-at-caravanserai",
+        "venue_url": "https://www.brightonfringe.org/venues/klub-kaput-at-caravanserai",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "636025"
+      }
+    ],
+    "lastmod": "2026-04-22T13:43:22+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/almost-fine/",
+    "slug": "almost-fine",
+    "title": "Almost Fine",
+    "description": "I’m fine... I think. A smile appears. A body follows—or tries to. Almost Fine is a 30-minute solo contemporary dance created and performed by Taiwanese dancer A-Yao (Peishao Huang). If you like to physical theatre or contemporary dance, come experience this intimate, close-up performance. Small actions—walking, sitting, scrolling, breathing—begin to slip. The work reveals the cracks beneath how we try to “be normal.” It shifts between control and impulse, clarity and chaos. Presented at the 2024 Taiwan Jumping Islands Dance Festival: “Stunning movements! Even his fingertips radiate sensuality and tension — raw and honest.”- from Dance Critic “I couldn’t look away. Every second was utterly gripping.” - from audience At its core, Almost Fine explores identity—gender, culture, and how we are shaped by forces we rarely question. It is not about breaking. It is not about control. It is about living in the space of “almost”— the fragile, honest moment before we find our footing again.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tI’m fine... I think.<br>A smile appears. A body follows—or tries to.<br><br>Almost Fine is a 30-minute solo contemporary dance created and performed by Taiwanese dancer A-Yao (Peishao Huang).<br><br>If you like to physical theatre or contemporary dance, come experience this intimate, close-up performance.<br><br>Small actions—walking, sitting, scrolling, breathing—begin to slip. The work reveals the cracks beneath how we try to “be normal.” It shifts between control and impulse, clarity and chaos.<br><br>Presented at the 2024 Taiwan Jumping Islands Dance Festival:<br>“Stunning movements! Even his fingertips radiate sensuality and tension — raw and honest.”- from Dance Critic<br> “I couldn’t look away. Every second was utterly gripping.” - from audience<br><br>At its core, Almost Fine explores identity—gender, culture, and how we are shaped by forces we rarely question.<br><br>It is not about breaking.<br>It is not about control.<br>It is about living in the space of “almost”—<br>the fragile, honest moment before we find our footing again.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "I'm fine. I think. A SOLO DANCE by A-Yao from Taiwan: A body unravelling in ritual, gender and movement - Honest, Fragile, ALMOST. - Friends' Meeting House - Fri 8th 2026, Sat 9th 2026",
+    "og_description": "I'm fine. I think. A SOLO DANCE by A-Yao from Taiwan: A body unravelling in ritual, gender and movement - Honest, Fragile, ALMOST. - Friends' Meeting House - Fri 8th 2026, Sat 9th 2026",
+    "date_modified": "2026-04-22T13:44:12+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-04-2026-130153-4599.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/04-04-2026-132143-3126.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/04-04-2026-133513-3082.jpg"
+    ],
+    "genre": "Circus Dance & Physical Theatre",
+    "duration": "30 mins",
+    "company": "Come On Creative Studio (from TAIWAN) (Website)",
+    "website": "http://www.instagram.com/come.on_studio",
+    "age_suitability": "3+ (Guideline)",
+    "age": {
+      "min_age": 3,
+      "type": "Guideline",
+      "raw": "3+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet",
+      "Step-free Access"
+    ],
+    "content_warnings": [],
+    "socials": {
+      "instagram": "https://www.instagram.com/a_yao.peishaoh"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-08",
+        "date_text": "May 8, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "Friends' Meeting House",
+        "venue_slug": "friends-meeting-house",
+        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "657911"
+      },
+      {
+        "date_iso": "2026-05-08",
+        "date_text": "May 8, 2026",
+        "time_text": "8:30 pm",
+        "venue_name": "Friends' Meeting House",
+        "venue_slug": "friends-meeting-house",
+        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "657912"
+      },
+      {
+        "date_iso": "2026-05-09",
+        "date_text": "May 9, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "Friends' Meeting House",
+        "venue_slug": "friends-meeting-house",
+        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "658081"
+      },
+      {
+        "date_iso": "2026-05-09",
+        "date_text": "May 9, 2026",
+        "time_text": "8:30 pm",
+        "venue_name": "Friends' Meeting House",
+        "venue_slug": "friends-meeting-house",
+        "venue_url": "https://www.brightonfringe.org/venues/friends-meeting-house",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "658082"
+      }
+    ],
+    "lastmod": "2026-04-22T13:44:12+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/the-full-gaffney/",
+    "slug": "the-full-gaffney",
+    "title": "The Full Gaffney",
+    "description": "Darren Gaffney's renowned show debuts in Brighton.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tDarren Gaffney's renowned show debuts in Brighton.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "The Full Gaffney - Darren Gaffney Live - Laughing Horse @ a&o Hostel bar (Front Room) - Sun 24th 2026, Mon 25th 2026, Tue 26th 2026",
+    "og_description": "The Full Gaffney - Darren Gaffney Live - Laughing Horse @ a&o Hostel bar (Front Room) - Sun 24th 2026, Mon 25th 2026, Tue 26th 2026",
+    "date_modified": "2026-04-22T13:55:16+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-10-2026-175318-9447.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-10-2026-182417-5698.jpg"
+    ],
+    "genre": "Comedy",
+    "duration": "60 mins",
+    "company": "Laughing Horse (Website)",
+    "website": "https://www.instagram.com/thegaffcast",
+    "age_suitability": "18+ (Restriction)",
+    "age": {
+      "min_age": 18,
+      "type": "Restriction",
+      "raw": "18+ (Restriction)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Strong Language"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/darren.gaffney",
+      "twitter": "https://www.twitter.com/The Gaff Cast",
+      "tiktok": "https://www.tiktok.com/@thegaffcast",
+      "instagram": "https://www.instagram.com/thegaffcast"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-24",
+        "date_text": "May 24, 2026",
+        "time_text": "9:30 pm",
+        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
+        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
+        "price_raw": "Standard: £9.50 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 9.5,
+          "Conc": 5.0
+        },
+        "performance_id": "635971"
+      },
+      {
+        "date_iso": "2026-05-25",
+        "date_text": "May 25, 2026",
+        "time_text": "8:15 pm",
+        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
+        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
+        "price_raw": "Standard: £9.50 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 9.5,
+          "Conc": 5.0
+        },
+        "performance_id": "635972"
+      },
+      {
+        "date_iso": "2026-05-26",
+        "date_text": "May 26, 2026",
+        "time_text": "8:15 pm",
+        "venue_name": "Laughing Horse @ a&o Hostel bar (Front Room)",
+        "venue_slug": "laughing-horse-ao-hostel-bar-front-room",
+        "venue_url": "https://www.brightonfringe.org/venues/laughing-horse-ao-hostel-bar-front-room",
+        "price_raw": "Standard: £9.50 Conc: £5 paid",
+        "free": false,
+        "prices": {
+          "Standard": 9.5,
+          "Conc": 5.0
+        },
+        "performance_id": "635973"
+      }
+    ],
+    "lastmod": "2026-04-22T13:55:16+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/chemistry/",
+    "slug": "chemistry",
+    "title": "Chemistry",
+    "description": "Steph’s battling chronic depression. Jamie’s crashed after pushing himself way too far, way too fast. They meet in a psychiatrist’s waiting room - hardly the stuff that rom-coms are made of - but the spark is instant and undeniable. What follows is messy, electric and unexpectedly beautiful. When your own brain feels like the enemy, is falling in love the bravest thing you can do - or the most reckless? Studies show that 1 in 4 adults in England will experience a mental health problem each year. Darkly funny and deeply moving, Jacob Marx Rice's Chemistry is a frank exploration of how we manage love - and life - when we rely on chemicals to keep us balanced.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tSteph’s battling chronic depression. Jamie’s crashed after pushing himself way too far, way too fast. They meet in a psychiatrist’s waiting room - hardly the stuff that rom-coms are made of - but the spark is instant and undeniable. What follows is messy, electric and unexpectedly beautiful. When your own brain feels like the enemy, is falling in love the bravest thing you can do - or the most reckless?<br><br>Studies show that 1 in 4 adults in England will experience a mental health problem each year. <br><br>Darkly funny and deeply moving, Jacob Marx Rice's Chemistry is a frank exploration of how we manage love - and life - when we rely on chemicals to keep us balanced.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "★★★★★ Hit comes to the Brighton Fringe: Witty and tender, Chemistry is a life-affirming love story sparked in therapy - Grania Dean Studio (Lantern Theatre @ ACT) - Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
+    "og_description": "★★★★★ Hit comes to the Brighton Fringe: Witty and tender, Chemistry is a life-affirming love story sparked in therapy - Grania Dean Studio (Lantern Theatre @ ACT) - Fri 15th 2026, Sat 16th 2026, Sun 17th 2026, Mon 18th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
+    "date_modified": "2026-04-22T15:27:23+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-11-2026-141925-9435.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-11-2026-142304-5074.jpg"
+    ],
+    "genre": "Theatre",
+    "duration": "60 mins",
+    "company": "Special Someone Productions",
+    "website": null,
+    "age_suitability": "18+ (Guideline)",
+    "age": {
+      "min_age": 18,
+      "type": "Guideline",
+      "raw": "18+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome"
+    ],
+    "content_warnings": [
+      "Strong Language",
+      "References to Mental Illness",
+      "References to Suicide/Self Harm"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/specialsomeoneprod"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-15",
+        "date_text": "May 15, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636247"
+      },
+      {
+        "date_iso": "2026-05-16",
+        "date_text": "May 16, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636248"
+      },
+      {
+        "date_iso": "2026-05-17",
+        "date_text": "May 17, 2026",
+        "time_text": "2:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636253"
+      },
+      {
+        "date_iso": "2026-05-18",
+        "date_text": "May 18, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636249"
+      },
+      {
+        "date_iso": "2026-05-19",
+        "date_text": "May 19, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636250"
+      },
+      {
+        "date_iso": "2026-05-20",
+        "date_text": "May 20, 2026",
+        "time_text": "9:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636251"
+      },
+      {
+        "date_iso": "2026-05-21",
+        "date_text": "May 21, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "Grania Dean Studio (Lantern Theatre @ ACT)",
+        "venue_slug": "grania-dean-studio-lantern-theatre-act",
+        "venue_url": "https://www.brightonfringe.org/venues/grania-dean-studio-lantern-theatre-act",
+        "price_raw": "Standard: £14 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 14.0,
+          "Conc": 12.0
+        },
+        "performance_id": "636254"
+      }
+    ],
+    "lastmod": "2026-04-22T15:27:23+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/the-shape-of-things-undone/",
+    "slug": "the-shape-of-things-undone",
+    "title": "The Shape of Things Undone",
+    "description": "It's four in the morning. Christine — a carer, forty-something — is heating a sandwich in a microwave she has an understanding with. Upstairs, they're opening the new wing. Speeches. Free biscuits. Down here, she's doing the checklist. An audio performance about what gets lost when medicine looks ahead — and what stubbornly persists. On the eve of a genomics research launch at a care facility being quietly transformed: a mug with no name, a father who looked at Christine like the girl who delivers the prescriptions, and what it means to hold a story when science is looking at people who haven't arrived yet. Voices overlap, pause, return. Time loosens. Sit inside a story, not behind it. Tender, dark, unexpectedly funny. Written by Lita Doolan (multi award-winning playwright). ★★★★ WhatsOnStage Performed by Julie Broadbent (OffWest End nom). 'Whatever I forget or remember — I'll still know where this mug is.'",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tIt's four in the morning. Christine — a carer, forty-something — is heating a sandwich in a microwave she has an understanding with. Upstairs, they're opening the new wing. Speeches. Free biscuits. Down here, she's doing the checklist.<br><br>An audio performance about what gets lost when medicine looks ahead — and what stubbornly persists. On the eve of a genomics research launch at a care facility being quietly transformed: a mug with no name, a father who looked at Christine like the girl who delivers the prescriptions, and what it means to hold a story when science is looking at people who haven't arrived yet.<br><br>Voices overlap, pause, return. Time loosens. Sit inside a story, not behind it.<br><br>Tender, dark, unexpectedly funny. <br><br>Written by Lita Doolan (multi award-winning playwright). ★★★★ WhatsOnStage <br>Performed by Julie Broadbent (OffWest End nom). <br><br>'Whatever I forget or remember — I'll still know where this mug is.'\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "An audio performance about Alzheimer’s, where voices overlap and time loosens. Meaning emerges through listening, and care, - Brighton Fringe Streaming - Fri 1st 2026",
+    "og_description": "An audio performance about Alzheimer’s, where voices overlap and time loosens. Meaning emerges through listening, and care, - Brighton Fringe Streaming - Fri 1st 2026",
+    "date_modified": "2026-04-22T15:56:28+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/04/04-06-2026-151025-9784.jpg",
+    "gallery": [],
+    "genre": "Theatre",
+    "duration": "35 mins",
+    "company": "Lita Doolan Production (Website)",
+    "website": "https://litadoolan.net/2025/12/11/staging-alzheimers-a-new-play-about-memory-care-and-what-we-leave-behind/",
+    "age_suitability": "16+ (Guideline)",
+    "age": {
+      "min_age": 16,
+      "type": "Guideline",
+      "raw": "16+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [],
+    "content_warnings": [],
+    "socials": {
+      "twitter": "https://www.twitter.com/DoolanLita",
+      "instagram": "https://www.instagram.com/LitaDoolan"
+    },
+    "performances": [],
+    "lastmod": "2026-04-22T15:56:28+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/international-poetry-festival/",
+    "slug": "international-poetry-festival",
+    "title": "International Poetry Festival",
+    "description": "International Poetry Festival is a 3-day electrifying celebration of contemporary poetry at Brighton Fringe, organized by the Institute for Experimental Arts (Greece, UK, Tunisia, India, USA, Lebanon, Germany). This immersive event brings together cutting-edge poetic forms from across the world, blending language, visual arts and sound into a powerful live experience. The festival features video poetry screenings by internationally acclaimed artists, presenting striking visual narratives that create cinematic poems challenging how poetry is seen and felt. Vibrant spoken word performances showcase a dynamic mix of international voices alongside local Brighton poets, offering raw, intimate and politically charged work that reflects diverse cultures and perspectives. Poetry is fused with electronic music, stunning visuals, live soundscapes and digital experimentation. Venue: Presuming Ed-114-115 London Road- Brighton UK Dates: 27-28 & 31 May - starts at 22.15",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tInternational Poetry Festival is a 3-day electrifying celebration of contemporary poetry at Brighton Fringe, organized by the Institute for Experimental Arts (Greece, UK, Tunisia, India, USA, Lebanon, Germany). This immersive event brings together cutting-edge poetic forms from across the world, blending language, visual arts and sound into a powerful live experience. <br><br>The festival features video poetry screenings by internationally acclaimed artists, presenting striking visual narratives that create cinematic poems challenging how poetry is seen and felt. Vibrant spoken word performances showcase a dynamic mix of international voices alongside local Brighton poets, offering raw, intimate and politically charged work that reflects diverse cultures and perspectives.<br><br>Poetry is fused with electronic music, stunning visuals, live soundscapes and digital experimentation. Venue: Presuming Ed-114-115 London Road- Brighton UK Dates: 27-28 &amp; 31 May - starts at 22.15\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "International Poetry Festival by the Institute for Experimental Arts: 3 days LIVE Spoken Word performances & Video Poetry - Presuming Ed - Wed 27th 2026, Thu 28th 2026, Sun 31st 2026",
+    "og_description": "International Poetry Festival by the Institute for Experimental Arts: 3 days LIVE Spoken Word performances & Video Poetry - Presuming Ed - Wed 27th 2026, Thu 28th 2026, Sun 31st 2026",
+    "date_modified": "2026-04-22T16:37:40+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-08-2026-184147-1788.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-08-2026-221111-3090.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/02-08-2026-221923-6566.jpg"
+    ],
+    "genre": "Literature & Spoken Word",
+    "duration": "60 mins",
+    "company": "The Institute for Experimental Arts (Website)",
+    "website": "https://theinstitute.info/",
+    "age_suitability": "18+ (Guideline)",
+    "age": {
+      "min_age": 18,
+      "type": "Guideline",
+      "raw": "18+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Strong Language",
+      "Loud Noises",
+      "References to Drug/Alcohol Misuse",
+      "References to Mental Illness",
+      "References to Sexual Abuse",
+      "Depictions and references to Violence"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/instituteart",
+      "instagram": "https://www.instagram.com/instituteartgreece"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-27",
+        "date_text": "May 27, 2026",
+        "time_text": "10:15 pm",
+        "venue_name": "Presuming Ed",
+        "venue_slug": "presuming-ed",
+        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
+        "price_raw": "Standard: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0
+        },
+        "performance_id": "635017"
+      },
+      {
+        "date_iso": "2026-05-28",
+        "date_text": "May 28, 2026",
+        "time_text": "10:15 pm",
+        "venue_name": "Presuming Ed",
+        "venue_slug": "presuming-ed",
+        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
+        "price_raw": "Standard: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0
+        },
+        "performance_id": "635018"
+      },
+      {
+        "date_iso": "2026-05-31",
+        "date_text": "May 31, 2026",
+        "time_text": "10:15 pm",
+        "venue_name": "Presuming Ed",
+        "venue_slug": "presuming-ed",
+        "venue_url": "https://www.brightonfringe.org/venues/presuming-ed",
+        "price_raw": "Standard: £10 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0
+        },
+        "performance_id": "635019"
+      }
+    ],
+    "lastmod": "2026-04-22T16:37:40+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/the-queer-comedy-showcase/",
+    "slug": "the-queer-comedy-showcase",
+    "title": "The Queer Comedy Showcase",
+    "description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running and continues to spotlight an electric new wave of queer performers, performing alongside experienced performers. We expect the show to be in high demand, so don't dilly dally, book today.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tThe much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running and continues to spotlight an electric new wave of queer performers, performing alongside experienced performers.<br><br>We expect the show to be in high demand, so don't dilly dally, book today.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running. - Comedy at the Caxton - Sat 16th 2026, Sat 30th 2026",
+    "og_description": "The much-loved Queer Comedy Showcase is back by popular demand — this Fringe favourite has sold out three years running. - Comedy at the Caxton - Sat 16th 2026, Sat 30th 2026",
+    "date_modified": "2026-04-23T10:12:41+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-11-2026-162051-5217.jpg",
+    "gallery": [],
+    "genre": "Comedy",
+    "duration": "60 mins",
+    "company": "The Queer Comedy Showcase",
+    "website": null,
+    "age_suitability": "18+ (Restriction)",
+    "age": {
+      "min_age": 18,
+      "type": "Restriction",
+      "raw": "18+ (Restriction)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Strong Language"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/alijaycomedy"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-16",
+        "date_text": "May 16, 2026",
+        "time_text": "8:30 pm",
+        "venue_name": "Comedy at the Caxton",
+        "venue_slug": "comedy-at-the-caxton",
+        "venue_url": "https://www.brightonfringe.org/venues/comedy-at-the-caxton",
+        "price_raw": "Standard: £5 (PWYW) pwyw",
+        "free": false,
+        "prices": {
+          "Standard": 5.0
+        },
+        "performance_id": "636362"
+      },
+      {
+        "date_iso": "2026-05-30",
+        "date_text": "May 30, 2026",
+        "time_text": "6:00 pm",
+        "venue_name": "Comedy at the Caxton",
+        "venue_slug": "comedy-at-the-caxton",
+        "venue_url": "https://www.brightonfringe.org/venues/comedy-at-the-caxton",
+        "price_raw": "Standard: £5 (PWYW) pwyw",
+        "free": false,
+        "prices": {
+          "Standard": 5.0
+        },
+        "performance_id": "636369"
+      }
+    ],
+    "lastmod": "2026-04-23T10:12:41+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/sherlock-holmes-vs-arsene-lupin/",
+    "slug": "sherlock-holmes-vs-arsene-lupin",
+    "title": "Sherlock Holmes vs Arsène Lupin: A Drag Crime Caper",
+    "description": "A new camp comedy pitting England’s most famous consulting detective against France’s most infamous gentleman burglar. Arsène Lupin voyages across the Channel to challenge Sherlock Holmes, with Dr John Watson caught in the middle of a tug-of-war between these literary legends. The Department of Ulterior Motives (DUM) specialises in high-concept, low-budget productions that blend physical performance and accessible storytelling with a mischievously political edge. Their debut production, an adaptation of The Man Who Was Thursday, was selected for SPRINT Festival 2026 at Camden People’s Theatre.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tA new camp comedy pitting England’s most famous consulting detective against France’s most infamous gentleman burglar.<br><br>Arsène Lupin voyages across the Channel to challenge Sherlock Holmes, with Dr John Watson caught in the middle of a tug-of-war between these literary legends.<br><br>The Department of Ulterior Motives (DUM) specialises in high-concept, low-budget productions that blend physical performance and accessible storytelling with a mischievously political edge. Their debut production, an adaptation of The Man Who Was Thursday, was selected for SPRINT Festival 2026 at Camden People’s Theatre.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "A new camp comedy pitting England’s famous consulting detective against France’s infamous gentleman burglar. - Brighton Open Air Theatre (BOAT),Ironworks Studios (Studio A) - Sat 16th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
+    "og_description": "A new camp comedy pitting England’s famous consulting detective against France’s infamous gentleman burglar. - Brighton Open Air Theatre (BOAT),Ironworks Studios (Studio A) - Sat 16th 2026, Tue 19th 2026, Wed 20th 2026, Thu 21st 2026",
+    "date_modified": "2026-04-23T11:50:58+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/01-21-2026-184020-4582.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/04-23-2026-125026-4379.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/04-23-2026-125031-2363.jpg"
+    ],
+    "genre": "Theatre",
+    "duration": "120 mins",
+    "company": "The Department of Ulterior Motives",
+    "website": null,
+    "age_suitability": "14+ (Guideline)",
+    "age": {
+      "min_age": 14,
+      "type": "Guideline",
+      "raw": "14+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet",
+      "Step-free Access"
+    ],
+    "content_warnings": [
+      "Loud Noises"
+    ],
+    "socials": {
+      "instagram": "https://www.instagram.com/dumtheatre"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-16",
+        "date_text": "May 16, 2026",
+        "time_text": "2:00 pm",
+        "venue_name": "Brighton Open Air Theatre (BOAT)",
+        "venue_slug": "brighton-open-air-theatre-boat",
+        "venue_url": "https://www.brightonfringe.org/venues/brighton-open-air-theatre-boat",
+        "price_raw": "Standard: £15 Conc: £14 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 14.0
+        },
+        "performance_id": "619835"
+      },
+      {
+        "date_iso": "2026-05-16",
+        "date_text": "May 16, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "Brighton Open Air Theatre (BOAT)",
+        "venue_slug": "brighton-open-air-theatre-boat",
+        "venue_url": "https://www.brightonfringe.org/venues/brighton-open-air-theatre-boat",
+        "price_raw": "Standard: £15 Conc: £14 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 14.0
+        },
+        "performance_id": "619836"
+      },
+      {
+        "date_iso": "2026-05-19",
+        "date_text": "May 19, 2026",
+        "time_text": "7:30 pm",
+        "venue_name": "Ironworks Studios (Studio A)",
+        "venue_slug": "ironworks-studios-studio-a",
+        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
+        "price_raw": "Standard: £15 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 12.0
+        },
+        "performance_id": "619837"
+      },
+      {
+        "date_iso": "2026-05-20",
+        "date_text": "May 20, 2026",
+        "time_text": "7:30 pm",
+        "venue_name": "Ironworks Studios (Studio A)",
+        "venue_slug": "ironworks-studios-studio-a",
+        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
+        "price_raw": "Standard: £15 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 12.0
+        },
+        "performance_id": "619838"
+      },
+      {
+        "date_iso": "2026-05-21",
+        "date_text": "May 21, 2026",
+        "time_text": "7:30 pm",
+        "venue_name": "Ironworks Studios (Studio A)",
+        "venue_slug": "ironworks-studios-studio-a",
+        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
+        "price_raw": "Standard: £15 Conc: £12 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 12.0
+        },
+        "performance_id": "619839"
+      }
+    ],
+    "lastmod": "2026-04-23T11:50:58+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/the-black-diamonds-presents-the-greatest-showgirl/",
+    "slug": "the-black-diamonds-presents-the-greatest-showgirl",
+    "title": "The Black Diamonds presents: The Greatest Showgirl",
+    "description": "Step right up and experience the captivating allure of The Greatest Showgirl ... a circus and carnival extravaganza! Immerse yourself in a mesmerizing blend of circus and carnival burlesque that will leave you on the edge of your seat. Get ready for a thrilling experience like no other, filled with heart-stopping dazzling performances, and non-stop entertainment. Join us for a night of wonder and excitement that will transport you to a world of magic and mystery. Don't miss out on this unforgettable adventure – get your tickets now and be a part of the show that everyone is talking about!",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tStep right up and experience the captivating allure of The Greatest Showgirl ... a circus and carnival extravaganza!<br><br>Immerse yourself in a mesmerizing blend of circus and carnival burlesque that will leave you on the edge of your seat. Get ready for a thrilling experience like no other, filled with heart-stopping dazzling performances, and non-stop entertainment. Join us for a night of wonder and excitement that will transport you to a world of magic and mystery. <br><br>Don't miss out on this unforgettable adventure – get your tickets now and be a part of the show that everyone is talking about!\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "Step right up and experience our captivating world, a unique blend of circus and carnival burlesque. - Ironworks Studios (Studio A) - Mon 25th 2026",
+    "og_description": "Step right up and experience our captivating world, a unique blend of circus and carnival burlesque. - Ironworks Studios (Studio A) - Mon 25th 2026",
+    "date_modified": "2026-04-23T12:02:43+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2025/12/12-02-2025-122251-4300.jpg",
+    "gallery": [],
+    "genre": "Cabaret & Variety",
+    "duration": "105 mins",
+    "company": "The Black Diamonds Dance",
+    "website": "www.theblackdiamondsuk.com",
+    "age_suitability": "18+ (Restriction)",
+    "age": {
+      "min_age": 18,
+      "type": "Restriction",
+      "raw": "18+ (Restriction)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Nudity",
+      "Contains Haze/Smoke Effects"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/theblackdiamondsuk",
+      "tiktok": "https://www.tiktok.com/@theblackdiamondsuk",
+      "instagram": "https://www.instagram.com/theblackdiamondsuk"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-25",
+        "date_text": "May 25, 2026",
+        "time_text": "7:30 pm",
+        "venue_name": "Ironworks Studios (Studio A)",
+        "venue_slug": "ironworks-studios-studio-a",
+        "venue_url": "https://www.brightonfringe.org/venues/ironworks-studios-studio-a",
+        "price_raw": "Standard: £15 Conc: £12.50 paid",
+        "free": false,
+        "prices": {
+          "Standard": 15.0,
+          "Conc": 12.5
+        },
+        "performance_id": null
+      }
+    ],
+    "lastmod": "2026-04-23T12:02:43+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/mile-die-club/",
+    "slug": "mile-die-club",
+    "title": "Mile Die Club",
+    "description": "Your evening begins with a flight. As the Brighton i360 lifts you 450ft above the city, fizz flows, the view is breath-taking... and something is very wrong. You’ll descend into the i360 dining room for an indulgent three-course dinner, where the suspects mingle between the tables. Between courses, you’ll interrogate them, challenge their alibis, uncover clues and compare notes with your fellow guests. And before the final course is cleared, you’ll need to decide: who deserves to be exposed as a murderer? This is not theatre you watch. This is a crime you solve. What’s included: A premium three-course dinner An immersive, story-led murder mystery experience Exclusive ascent on the Brighton i360 Live interaction with a professional cast Fizz on arrival and wine with the meal A final reveal — and bragging rights if you get it right Perfect for thrill-seekers, special occasions, corporate entertaining, or anyone who believes dinner should come with a body count.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tYour evening begins with a flight. As the Brighton i360 lifts you 450ft above the city, fizz flows, the view is breath-taking... and something is very wrong.<br><br>You’ll descend into the i360 dining room for an indulgent three-course dinner, where the suspects mingle between the tables. Between courses, you’ll interrogate them, challenge their alibis, uncover clues and compare notes with your fellow guests.<br><br>And before the final course is cleared, you’ll need to decide: who deserves to be exposed as a murderer?<br><br>This is not theatre you watch.<br>This is a crime you solve.<br><br>What’s included:<br><br>A premium three-course dinner<br>An immersive, story-led murder mystery experience<br>Exclusive ascent on the Brighton i360<br>Live interaction with a professional cast<br>Fizz on arrival and wine with the meal<br>A final reveal — and bragging rights if you get it right<br>Perfect for thrill-seekers, special occasions, corporate entertaining, or anyone who believes dinner should come with a body count.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "A Murder Mystery Fine-Dining Experience on the Brighton i360. Includes 3 course dinner, wine and a mystery that needs solving! - The Pod - Brighton i360 - Fri 1st 2026, Sat 2nd 2026, Fri 15th 2026, Sat 16th 2026",
+    "og_description": "A Murder Mystery Fine-Dining Experience on the Brighton i360. Includes 3 course dinner, wine and a mystery that needs solving! - The Pod - Brighton i360 - Fri 1st 2026, Sat 2nd 2026, Fri 15th 2026, Sat 16th 2026",
+    "date_modified": "2026-04-23T15:33:13+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-09-2026-170225-9543.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-170516-9516.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-170633-6818.jpg"
+    ],
+    "genre": "Cabaret & Variety",
+    "duration": "180 mins",
+    "company": "Pier Pressure (Website)",
+    "website": "http://www.pierpressure.co.uk/brighton",
+    "age_suitability": "18+ (Restriction)",
+    "age": {
+      "min_age": 18,
+      "type": "Restriction",
+      "raw": "18+ (Restriction)"
+    },
+    "babes_in_arms": "Under 2's are not allowed at this event.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Audience Interaction",
+      "Strong Language",
+      "Depictions and references to Violence"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/pierpressurebrighton",
+      "tiktok": "https://www.tiktok.com/@pierpressurebtn",
+      "instagram": "https://www.instagram.com/pierpressurebtn"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-01",
+        "date_text": "May 1, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "The Pod - Brighton i360",
+        "venue_slug": "the-pod-brighton-i360",
+        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
+        "price_raw": "Standard: £109 paid",
+        "free": false,
+        "prices": {
+          "Standard": 109.0
+        },
+        "performance_id": null
+      },
+      {
+        "date_iso": "2026-05-02",
+        "date_text": "May 2, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "The Pod - Brighton i360",
+        "venue_slug": "the-pod-brighton-i360",
+        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
+        "price_raw": "Standard: £109 paid",
+        "free": false,
+        "prices": {
+          "Standard": 109.0
+        },
+        "performance_id": "635363"
+      },
+      {
+        "date_iso": "2026-05-15",
+        "date_text": "May 15, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "The Pod - Brighton i360",
+        "venue_slug": "the-pod-brighton-i360",
+        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
+        "price_raw": "Standard: £109 paid",
+        "free": false,
+        "prices": {
+          "Standard": 109.0
+        },
+        "performance_id": "635364"
+      },
+      {
+        "date_iso": "2026-05-16",
+        "date_text": "May 16, 2026",
+        "time_text": "7:00 pm",
+        "venue_name": "The Pod - Brighton i360",
+        "venue_slug": "the-pod-brighton-i360",
+        "venue_url": "https://www.brightonfringe.org/venues/the-pod-brighton-i360",
+        "price_raw": "Standard: £109 paid",
+        "free": false,
+        "prices": {
+          "Standard": 109.0
+        },
+        "performance_id": "635365"
+      }
+    ],
+    "lastmod": "2026-04-23T15:33:13+00:00"
+  },
+  {
+    "url": "https://www.brightonfringe.org/events/bound-by-the-wind-echoes-of-the-past/",
+    "slug": "bound-by-the-wind-echoes-of-the-past",
+    "title": "Bound by the Wind: Echoes of the Past",
+    "description": "What really happened on the day Mulan laid down her sword? Bound by the Wind: The Echoes of the Past returns to the legendary warrior at the moment history skips over — the night the war ends, when victory no longer gives answers. As Mulan confronts a captured enemy and the loyalty of those closest to her, the play narrows its focus to a single turning point: a decision that will cost lives, break faith, and redefine what heroism truly demands. This new version strips back the epic scale of previous productions to explore the human cost behind the myth — not the battles fought, but the choice to stop fighting. Blending stylised stage combat, physical storytelling, and an immersive soundscape, Bound by the Wind offers an intimate reimagining of a legendary figure caught between duty, identity, and freedom. Created by a multicultural team of emerging artists, the production invites audiences to witness the woman behind the war god — and the moment she chooses to leave.",
+    "description_html": "<div class=\"etron-description\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\tWhat really happened on the day Mulan laid down her sword?<br><br>Bound by the Wind: The Echoes of the Past returns to the legendary warrior at the moment history skips over — the night the war ends, when victory no longer gives answers.<br><br>As Mulan confronts a captured enemy and the loyalty of those closest to her, the play narrows its focus to a single turning point: a decision that will cost lives, break faith, and redefine what heroism truly demands.<br><br>This new version strips back the epic scale of previous productions to explore the human cost behind the myth — not the battles fought, but the choice to stop fighting.<br><br>Blending stylised stage combat, physical storytelling, and an immersive soundscape, Bound by the Wind offers an intimate reimagining of a legendary figure caught between duty, identity, and freedom.<br><br>Created by a multicultural team of emerging artists, the production invites audiences to witness the woman behind the war god — and the moment she chooses to leave.\t\t\t\t\t\t\n\t\t\t\t\t</div>",
+    "meta_description": "The war is over. The legend remains. Bound by the Wind reveals what happened on the night Mulan chose to leave. ★★★½ - Rotunda Theatre Brighton: Bubble - Sun 24th 2026, Mon 25th 2026",
+    "og_description": "The war is over. The legend remains. Bound by the Wind reveals what happened on the night Mulan chose to leave. ★★★½ - Rotunda Theatre Brighton: Bubble - Sun 24th 2026, Mon 25th 2026",
+    "date_modified": "2026-04-23T16:03:13+00:00",
+    "hero_image": "https://content.brightonfringe.org/wp-content/uploads/2026/03/02-09-2026-163736-9740.jpg",
+    "gallery": [
+      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-163838-4706.jpg",
+      "https://d1vlmco8ur52ud.cloudfront.net/02-09-2026-163955-1945.jpg"
+    ],
+    "genre": "Theatre",
+    "duration": "60 mins",
+    "company": "The Whisper Current Productions",
+    "website": null,
+    "age_suitability": "12+ (Guideline)",
+    "age": {
+      "min_age": 12,
+      "type": "Guideline",
+      "raw": "12+ (Guideline)"
+    },
+    "babes_in_arms": "Under 2's are allowed in for free on the lap of a guardian.",
+    "accessibility": [
+      "Assistance Dogs Welcome",
+      "Wheelchair Accessible",
+      "Accessible Toilet"
+    ],
+    "content_warnings": [
+      "Strong Language",
+      "Contains Haze/Smoke Effects",
+      "Strobe Lights in Use",
+      "Loud Noises",
+      "Depictions and references to Violence"
+    ],
+    "socials": {
+      "facebook": "https://www.facebook.com/profile.php?id=61582504802703",
+      "instagram": "https://www.instagram.com/the_whisper_current/"
+    },
+    "performances": [
+      {
+        "date_iso": "2026-05-24",
+        "date_text": "May 24, 2026",
+        "time_text": "2:00 pm",
+        "venue_name": "Rotunda Theatre Brighton: Bubble",
+        "venue_slug": "rotunda-theatre-brighton-bubble",
+        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-bubble",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "634977"
+      },
+      {
+        "date_iso": "2026-05-25",
+        "date_text": "May 25, 2026",
+        "time_text": "5:00 pm",
+        "venue_name": "Rotunda Theatre Brighton: Bubble",
+        "venue_slug": "rotunda-theatre-brighton-bubble",
+        "venue_url": "https://www.brightonfringe.org/venues/rotunda-theatre-brighton-bubble",
+        "price_raw": "Standard: £10 Conc: £8 paid",
+        "free": false,
+        "prices": {
+          "Standard": 10.0,
+          "Conc": 8.0
+        },
+        "performance_id": "634978"
+      }
+    ],
+    "lastmod": "2026-04-23T16:03:13+00:00"
   }
 ]
